@@ -1,9 +1,106 @@
-body{
-	background-color: #777;
+/**Printer Rules*/
+@media print {
+#header {display:none;}
+#content {display:none;}
+#comments {display:none;}
+#sidebar {display:none;}
+#footer {display:none;}
+
+.site-description {display:none;}
+.site-title {display:none;}
 }
 
-.h1{
-	background-color: #613;
-	font-size: 24pt;
+/*Mobile Devices*/
+@media only screen and (max-width: 768px){
+    
+    [class*="mapouter"]{
+      text-align:center;
+      width:100%;
+     margin-left: auto;
+     margin-right: auto;
+     
+    }
+    
+    [class*=".cards img"]{}
+      max-width: 100%;
+    
+     
+    }
+}
+
+/*Assuming on a Computer Screen or will catch any other Case*/
+background, html{
+    Background-color: yellow;    
+}
+
+
+h2 {
+  background-color: #E9C49A;
+  color: #3F2921;    
+  border-style: double;
+  border-color: #3F2921;
+  border-width:medium;
+  padding: 0.5%;
+  font-size: 110%;
+  font-weight:700;
+}
+
+p{
+color: #3F2921;
+font-size: 100%;
+padding: 0;
+    margin: 0;
+    
+}
+
+.accent1{
+    Background-color: #E9C49A;
+}
+
+.accent2{
+    Background-color: #BBA497;
+}
+
+.accent3{
+    background-color: #3F2921;
+}        
+
+.accent4{
+    Background-color: #793A29;
+}
+
+.body {
+    font-family: "Lato", sans-serif;    
+    background-color: #F1D9B1;
+    color: #3F2921;
+    padding: 2% 2%;
+    list-style: circle;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    background: #770011;
+    font-size: 80%;
+    font-style:italic;
+    padding: 2% 2%;
+}
+
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1% solid gray;
+	margin: 1%;
+	padding: 1%;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
 }
 

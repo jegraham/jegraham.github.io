@@ -1,0 +1,77 @@
+.h-image{
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.header{
+    font-size: 450%;
+    color: black;
+    position:relative;
+    float: right;  
+    text-shadow: 2px 2px 20px #FFF;
+	overflow: hidden;
+	padding: 10px 10px;
+}
+
+h1.header{
+	margin: 0px;
+	text-align: center;
+}
+
+nav{
+	padding: 10px 10px;	
+}
+
+li{
+	padding: 10px;
+	font-size: 28px;
+}
+
+li a{
+	padding: 10px;
+	font-size: 28px;
+}
+
+li a:active {
+	background-color: aqua;
+	padding: 10px;
+	font-size: 28px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: pink;
+    width: 100%;
+}
+
+.li {
+    float: left;
+}
+
+.li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li a:hover {
+    background-color: darkorchid;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    background-color: deeppink;
+}
+
