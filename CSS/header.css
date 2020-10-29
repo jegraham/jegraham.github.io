@@ -6,38 +6,38 @@
 }
 
 .header{
-    font-size: 450%;
+    font-size: 5em;
     color: black;
     position:relative;
     float: right;  
     text-shadow: 2px 2px 20px #FFF;
 	overflow: hidden;
-	padding: 10px 10px;
-}
-
-h1.header{
-	margin: 0px;
-	text-align: center;
+	padding: 10%;
+	text-align:center;
+	position: relative;
+	margin: 0%;
 }
 
 nav{
-	padding: 10px 10px;	
+	padding: 10%;
+    position: relative; 
+	margin: 0%; 
 }
 
 li{
-	padding: 10px;
-	font-size: 28px;
+	padding: 2%;
+	font-size: 3em;
 }
 
 li a{
-	padding: 10px;
-	font-size: 28px;
+	padding: 2%;
+	font-size: 1em;
 }
 
 li a:active {
 	background-color: aqua;
-	padding: 10px;
-	font-size: 28px;
+	padding: 2%;
+	font-size: 1em;
 }
 
 
