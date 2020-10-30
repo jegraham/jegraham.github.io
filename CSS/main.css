@@ -1,3 +1,9 @@
+/** Responsive Design - for fonts add in  style="font-size:10vw"**/
+/** Be more responsive **/
+
+
+
+
 /**Printer Rules*/
 @media print {
 #header {display:none;}

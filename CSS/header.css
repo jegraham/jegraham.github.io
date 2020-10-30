@@ -10,9 +10,8 @@
     color: black;
     position:relative;
     float: right;  
-    text-shadow: 2px 2px 20px #FFF;
 	overflow: hidden;
-	padding: 10%;
+	padding: 1%;
 	text-align:center;
 	position: relative;
 	margin: 0%;
@@ -25,29 +24,22 @@ nav{
 }
 
 li{
-	padding: 2%;
-	font-size: 3em;
+	padding: 20px;
+	font-size: 2em;
 }
 
-li a{
-	padding: 2%;
-	font-size: 1em;
-}
 
-li a:active {
-	background-color: aqua;
-	padding: 2%;
-	font-size: 1em;
+li:active {
+	background-color: aqua;	
 }
 
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
     background-color: pink;
-    width: 100%;
 }
 
 .li {
