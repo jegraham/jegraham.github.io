@@ -2,14 +2,13 @@
 
 
 .header{
-    font-size: 8rem;
+    font-size: 4rem;
 	font-family: Cinzel Decorative;
-	font-weight: bold;
     color: MidnighBlue;
     position: absolute;
     float: center;  
 	overflow: hidden;
-	padding: 5% 20% 5% 20%;
+	padding: 5% 10% 5% 10%;
 	text-align:center;
 	position: relative;
 	margin: 3%;
@@ -26,7 +25,7 @@
 	color: orange;
 	text-align: center;
 	text-decoration: none;
-	font-size: 4rem;
+	font-size: 2rem;
 	float: center;
 	display: block;
 	padding: 2%;
