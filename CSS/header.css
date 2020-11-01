@@ -19,7 +19,7 @@
 .menu{
     overflow: hidden;
     background-color:Purple;
-	padding: 1%;
+	padding: 0.5%;
 	margin: 3%;
 }
 
@@ -47,10 +47,11 @@
 .menu a.active{
 	color: purple;
 	background-color: orange;
+	border: 0.25vw solid orange;
 }
 
-
-li {
+/*** Moves menu to a horizontal layout ***/
+.menu li {
 	display: inline;
 	float: left;
 }
