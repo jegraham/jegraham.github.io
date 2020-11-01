@@ -3,7 +3,7 @@
 
 /*** Styling for the header including size, colour and decorative flare ***/
 .header{
-    font-size: 4rem;
+    font-size: 7vw;
 	font-family: Cinzel Decorative;
     color: MidnighBlue;
     position: absolute;
@@ -19,6 +19,8 @@
 .menu{
     overflow: hidden;
     background-color:Purple;
+	padding: 1%;
+	margin: 3%;
 }
 
 /*** Colouring and styling the links within the menu list ***/
@@ -26,16 +28,19 @@
 	color: orange;
 	text-align: center;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 3vw;
+	border: 0.25vw solid orange;
 	float: center;
 	display: block;
-	padding: 2%;
+	padding: 1vw;
+	margin: 1%;
 }
 
 /*** Colouring the Menu when mouse hovers over ***/
 .menu a:hover{
 	color: purple;
 	background-color: orange;
+	border: 0.25vw solid purple;
 }
 
 /*** Colouring the Menu item that is active (what page you the user is currently viewing) ***/
@@ -45,56 +50,7 @@
 }
 
 
-/*** Works & Needs some work to look pretty
-nav{
-	padding: 3vw;
-    position: absolute; 
-	margin: 0%; 
-	float: center;
+li {
+	display: inline;
+	float: left;
 }
-
-
-li{
-	padding: 2vw;
-	font-size: 3rem;
-}
-
-
-li:active {
-	background-color: aqua;	
-}
-
-
-ul {
-	margin: 0vw;
-    padding: 0vw;
-    overflow: hidden;
-    background-color: pink;
-}
-
-.li { 
-    float: left;	
-    padding: 1vw 1vw;
-}
-
-.li a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
-
-.li:hover {
-    background-color: green;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-li.active{
-    background-color: deeppink;
-}
-
-**/

@@ -39,23 +39,28 @@ background, html{
     Background-color: yellow;    
 }
 
-
+/** Body styling **/
 body {
-	  background-color: PowderBlue;
-      color: MidnightBlue;  
+	background-color: PowderBlue;
+	color: MidnightBlue;  
+	border-style: double;
+	border-color: Orange;
+	border-width:medium;
 }
 
+/** Header 1 font styling, border design and padding. This is the Title/Header Styling**/
 h1 {
   background-color: MintCream;
-  color: MidnightBlue;    
+  color: MidnightBlue;  
+  font-size: 2vw;
+  font-weight:bold;  
   border-style: double;
   border-color: Orange;
   border-width:medium;
   padding: 4vw;
-  font-size: 2vw;
-  font-weight:bold;
 }
 
+/** Header 2 is for the paragraph header **/
 h2 {
   background-color: MintCream;
   color: MidnightBlue;    
@@ -65,7 +70,13 @@ h2 {
   font-weight:bold;
 }
 
+/** Header 3 styling**/
+h3 {
+	background-color: MintCream;
+	color: MidnightBlue;
+}
 
+/** Paragraphy styling **/
 p{
 	color: MintCream;
 	background-color: MidnightBlue;
@@ -75,21 +86,10 @@ p{
 	margin: 0;
 }
 
-.accent1{
-    Background-color: #E9C49A;
-}
 
-.accent2{
-    Background-color: #BBA497;
-}
 
-.accent3{
-    background-color: #3F2921;
-}        
 
-.accent4{
-    Background-color: #793A29;
-}
+/*** Previous website css
 
 .body {
     font-family: "Lato", sans-serif;    
@@ -126,3 +126,4 @@ p{
 	
 }
 
+***/
