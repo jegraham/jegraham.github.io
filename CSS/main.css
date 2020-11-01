@@ -40,23 +40,39 @@ background, html{
 }
 
 
-h2 {
-  background-color: #E9C49A;
-  color: #3F2921;    
-  border-style: double;
-  border-color: #3F2921;
-  border-width:medium;
-  padding: 0.5%;
-  font-size: 110%;
-  font-weight:700;
+body {
+	  background-color: PowderBlue;
+      color: MidnightBlue;  
 }
 
+h1 {
+  background-color: MintCream;
+  color: MidnightBlue;    
+  border-style: double;
+  border-color: Orange;
+  border-width:medium;
+  padding: 4vw;
+  font-size: 2vw;
+  font-weight:bold;
+}
+
+h2 {
+  background-color: MintCream;
+  color: MidnightBlue;    
+  border-width:medium;
+  padding: 1vw;
+  font-size: 3vw;
+  font-weight:bold;
+}
+
+
 p{
-color: #3F2921;
-font-size: 100%;
-padding: 0;
-    margin: 0;
-    
+	color: MintCream;
+	background-color: MidnightBlue;
+	font-size: 2.5vw;
+	font-weight: normal;
+	padding: 1vw;
+	margin: 0;
 }
 
 .accent1{

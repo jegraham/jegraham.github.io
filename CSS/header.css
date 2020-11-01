@@ -1,31 +1,37 @@
-.h-image{
-    width: 100%; 
+@import url('https://fonts.googleapis.com/css?family=Cinzel Decorative');
+
+
+.header{
+    font-size: 8rem;
+	font-family: Cinzel Decorative;
+	font-weight: bold;
+    color: MidnighBlue;
+    position: absolute;
+    float: center;  
+	overflow: hidden;
+	padding: 5% 20% 5% 20%;
+	text-align:center;
+	position: relative;
+	margin: 3%;
+}
+
+
+.menu{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
 
-.header{
-    font-size: 5em;
-    color: black;
-    position:relative;
-    float: right;  
-	overflow: hidden;
-	padding: 1%;
-	text-align:center;
-	position: relative;
-	margin: 0%;
-}
-
 nav{
-	padding: 10%;
-    position: relative; 
+	padding: 3vw;
+    position: absolute; 
 	margin: 0%; 
+	float: center;
 }
 
 li{
-	padding: 20px;
-	font-size: 2em;
+	padding: 2vw;
+	font-size: 3rem;
 }
 
 
@@ -35,27 +41,26 @@ li:active {
 
 
 ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+	margin: 0vw;
+    padding: 0vw;
     overflow: hidden;
     background-color: pink;
 }
 
-.li {
-    float: left;
+.li { 
+    float: left;	
+    padding: 1vw 1vw;
 }
 
 .li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-.li a:hover {
-    background-color: darkorchid;
+.li:hover {
+    background-color: green;
 }
 
 a {
@@ -63,7 +68,7 @@ a {
     text-decoration: none;
 }
 
-.active{
+li.active{
     background-color: deeppink;
 }
 
