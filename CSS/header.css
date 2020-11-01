@@ -15,19 +15,44 @@
 	margin: 3%;
 }
 
-
+/*** Adding background colour to the menu navigation ***/
 .menu{
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+    overflow: hidden;
+    background-color:Purple;
 }
 
+/*** Colouring and styling the links within the menu list ***/
+.menu a {
+	color: orange;
+	text-align: center;
+	text-decoration: none;
+	font-size: 4rem;
+	float: center;
+	display: block;
+	padding: 2%;
+}
+
+/*** Colouring the Menu when mouse hovers over ***/
+.menu a:hover{
+	color: purple;
+	background-color: orange;
+}
+
+/*** Colouring the Menu item that is active (what page you the user is currently viewing) ***/
+.menu a.active{
+	color: purple;
+	background-color: orange;
+}
+
+
+/*** Works & Needs some work to look pretty
 nav{
 	padding: 3vw;
     position: absolute; 
 	margin: 0%; 
 	float: center;
 }
+
 
 li{
 	padding: 2vw;
@@ -72,3 +97,4 @@ li.active{
     background-color: deeppink;
 }
 
+**/
