@@ -1,6 +1,7 @@
+/*** Importing the Google Font for the .header ***/
 @import url('https://fonts.googleapis.com/css?family=Cinzel Decorative');
 
-
+/*** Styling for the header including size, colour and decorative flare ***/
 .header{
     font-size: 4rem;
 	font-family: Cinzel Decorative;
