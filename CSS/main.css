@@ -1,7 +1,11 @@
 /** Responsive Design - for fonts add in  style="font-size:10vw"**/
 /** Be more responsive https://www.w3schools.com/html/html_responsive.asp**/
 
-
+/** Lime Green #6BD425 
+	Dark Purple #42113C
+	Dark Purple2 #370926
+	Dark Purple3 #1C0118
+**/
 
 
 /**Printer Rules*/
@@ -41,17 +45,17 @@ background, html{
 
 /** Body styling **/
 body {
-	background-color: #FCAEF;
-	color: #0A1F38;  
+    background-color:#1C0118;
+	color: #1C0118;  
 	border-style: double;
-	border-color: #E31D4C;
+	border-color: #6BD425;
 	border-width:medium;
 }
 
 /** Header 1 font styling, border design and padding. This is the Title/Header Styling**/
 h1 {
-  background-color: #FDDF35;
-  color: #0A1F38;  
+  background-color: #42113C;
+  color: #1C0118;  
   font-size: 2vw;
   font-weight: bold;  
   border-width:medium;
@@ -59,30 +63,42 @@ h1 {
 
 /** Header 2 is for the paragraph header **/
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight:bold;
   color: #FCFAEF;  
-  background-color: #E31D4C;
+  background-color: #6BD425;
   padding: 0.5em 1em;
   margin: 0.5em 1em 0.2em 1em;
 }
 
 /** Header 3 styling**/
 h3 {
-	background-color: #2670C5;
-	color: #0A1F38;
+	font-size: 1.5em; 
+	color: #6BD425;
+	padding:0.5em;
+	margin: 0.5em 2em;
+	border: 0.05em solid #6BD425;
 }
+
+/** Header 4 styling**/
+h4 {
+	font-size: 1em; 
+	text-decoration: underline;
+	color: #6BD425;
+	margin: 0.5em 4em;
+}
+
 
 /** Paragraph styling **/
 p{
 	color: #FCFAEF;
-	background-color: #0A1F38;
-	border: 0.1em solid #FDDF35;
-	font-size: 2.2em;
+	background-color: #1C0118;
+	border: 0.1em solid #42113C;
+	font-size: 1.5em;
 	font-weight: normal;
 	line-height: 1.5em;
-	padding: 1em;
-	margin: 0em 1.5em 2em 1.5em;
+	padding: 0.5em;
+	margin: 0em 2.5em 2.5em 2.5em;
 }
 
 /*** Responsive headers and text screens under 900px ***/

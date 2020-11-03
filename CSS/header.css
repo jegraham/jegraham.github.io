@@ -6,7 +6,7 @@
 .header{
     font-size: 4rem;
 	font-family: Cinzel Decorative;
-    color: #0A1F38;
+    color: #FCFAEF;
     float: center;  
 	overflow: auto;
 	padding: 1em;
@@ -18,18 +18,18 @@
 /*** Adding background colour to the menu navigation ***/
 .menu{
     overflow: hidden;
-    background-color:#0A1F38;
+    background-color:#1C0118;
 	padding: 0.1em;
 	margin: 0em 1em 1em 1em;
 }
 
 /*** Colouring and styling the links within the menu list ***/
 .menu a {
-	color: #FDDF35;
+	color: #42113C;
 	text-align: center;
 	text-decoration: none;
-	font-size: 3em;
-	border: 0.05em solid #FDDF35;
+	font-size: 2em;
+	border: 0.05em solid #42113C;
 	float: center;
 	display: block;
 	padding: 0.1em;
@@ -38,16 +38,16 @@
 
 /*** Colouring the Menu when mouse hovers over ***/
 .menu a:hover{
-	color: #2670C5;
-	background-color: #0A1F38;
-	border: 0.05em solid #2670C5;
+	color: #6BD425;
+	background-color: #1C0118;
+	border: 0.05em solid #6BD425;
 }
 
 /*** Colouring the Menu item that is active (what page you the user is currently viewing) ***/
 .menu a.active{
-	color: #0A1F38;
-	background-color: #FDDF35;
-	border: 0.05 em solid #FDDF35;
+	color: #6BD425;
+	background-color: #370926;
+	border: 0.05em solid #6BD425;
 }
 
 
