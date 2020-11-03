@@ -41,52 +41,64 @@ background, html{
 
 /** Body styling **/
 body {
-	background-color: PowderBlue;
-	color: MidnightBlue;  
+	background-color: #FCAEF;
+	color: #0A1F38;  
 	border-style: double;
-	border-color: Orange;
+	border-color: #E31D4C;
 	border-width:medium;
 }
 
 /** Header 1 font styling, border design and padding. This is the Title/Header Styling**/
 h1 {
-  background-color: MintCream;
-  color: MidnightBlue;  
+  background-color: #FDDF35;
+  color: #0A1F38;  
   font-size: 2vw;
-  font-weight:bold;  
-  border-style: double;
-  border-color: Orange;
+  font-weight: bold;  
   border-width:medium;
-  padding: 4vw;
 }
 
 /** Header 2 is for the paragraph header **/
 h2 {
-  background-color: MintCream;
-  color: MidnightBlue;    
-  border-width:medium;
-  padding: 1vw;
-  font-size: 3.5vw;
+  font-size: 2em;
   font-weight:bold;
+  color: #FCFAEF;  
+  background-color: #E31D4C;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em 0.2em 1em;
 }
 
 /** Header 3 styling**/
 h3 {
-	background-color: MintCream;
-	color: MidnightBlue;
+	background-color: #2670C5;
+	color: #0A1F38;
 }
 
-/** Paragraphy styling **/
+/** Paragraph styling **/
 p{
-	color: MintCream;
-	background-color: MidnightBlue;
-	font-size: 3vw;
+	color: #FCFAEF;
+	background-color: #0A1F38;
+	border: 0.1em solid #FDDF35;
+	font-size: 2.2em;
 	font-weight: normal;
-	padding: 1vw;
-	margin: 0;
+	line-height: 1.5em;
+	padding: 1em;
+	margin: 0em 1.5em 2em 1.5em;
 }
 
-
+/*** Responsive headers and text screens under 900px ***/
+@media screen and (max-width: 900px){
+	h2{
+		font-size:1.5em;
+		text-align: center;
+		margin:0.25em;
+	}
+	
+	p{
+		font-size:1.5em;
+		margin:0.25em;
+	}
+	
+}
 
 
 /*** Previous website css

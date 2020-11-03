@@ -1,57 +1,84 @@
 /*** Importing the Google Font for the .header ***/
-@import url('https://fonts.googleapis.com/css?family=Cinzel Decorative');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC');
 
 /*** Styling for the header including size, colour and decorative flare ***/
 .header{
-    font-size: 7vw;
+    font-size: 4rem;
 	font-family: Cinzel Decorative;
-    color: MidnighBlue;
-    position: absolute;
+    color: #0A1F38;
     float: center;  
-	overflow: hidden;
-	padding: 5% 10% 5% 10%;
+	overflow: auto;
+	padding: 1em;
+	margin: 0.25em 0.25em 0em 0.25em;
 	text-align:center;
 	position: relative;
-	margin: 3%;
 }
 
 /*** Adding background colour to the menu navigation ***/
 .menu{
     overflow: hidden;
-    background-color:Purple;
-	padding: 0.5%;
-	margin: 3%;
+    background-color:#0A1F38;
+	padding: 0.1em;
+	margin: 0em 1em 1em 1em;
 }
 
 /*** Colouring and styling the links within the menu list ***/
 .menu a {
-	color: orange;
+	color: #FDDF35;
 	text-align: center;
 	text-decoration: none;
-	font-size: 3vw;
-	border: 0.25vw solid orange;
+	font-size: 3em;
+	border: 0.05em solid #FDDF35;
 	float: center;
 	display: block;
-	padding: 1vw;
-	margin: 1%;
+	padding: 0.1em;
+	margin:0.1em;
 }
 
 /*** Colouring the Menu when mouse hovers over ***/
 .menu a:hover{
-	color: purple;
-	background-color: orange;
-	border: 0.25vw solid purple;
+	color: #2670C5;
+	background-color: #0A1F38;
+	border: 0.05em solid #2670C5;
 }
 
 /*** Colouring the Menu item that is active (what page you the user is currently viewing) ***/
 .menu a.active{
-	color: purple;
-	background-color: orange;
-	border: 0.25vw solid orange;
+	color: #0A1F38;
+	background-color: #FDDF35;
+	border: 0.05 em solid #FDDF35;
 }
+
 
 /*** Moves menu to a horizontal layout ***/
 .menu li {
 	display: inline;
 	float: left;
 }
+
+/*** Move the Menu item to the right***/
+.menu .right{
+		float:right;
+}
+
+/*** Responsive Menu Bar for screens under 900px ***/
+@media screen and (max-width: 900px){
+	.header{
+		font-size:1.5em;
+	}
+	
+	.menu {
+		font-size:0.5em;
+	}
+	
+	.menu li{
+		float: none;
+	}
+	
+	.menu .right{
+		float:none;
+}
+}
+
+
