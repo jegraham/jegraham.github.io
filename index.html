@@ -5,27 +5,45 @@ direct through the pages as needed.
 
 
 FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
+- Include About 
+- Inlcude Credits - Bootstrap, CDN
 ------------------------------------------------------------>
 <!DOCTYPE HTML>
 <html lang= "en">
 
 	<!--- <link rel="stylesheet" type="text/css" href="stylesheet.css" media=""/> --->
 	<!--- <link rel="" src="HTML%20Content/Header.html"></include>--->
-	<link rel="stylesheet" type="text/css" href="CSS/main.css">	
-	<link rel="stylesheet" type="text/css" href="CSS/header.css">	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!--- <link rel="stylesheet" type="text/css" href="CSS/main.css">	
+	<link rel="stylesheet" type="text/css" href="CSS/header.css">	--->
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.css">	
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.min.css">	
 	
-	
-	<!-- Making the Webpage Responsive -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
 	<head> 
 		<title> Jessica L. Graham Portfolio </title>
+		
+		<!-- Making the Webpage Responsive -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<header> 
-		<h1 class="header">Jessica L. Graham Portfolio </h1>
+	<header class="jumbotron bg-dark text-white"> 
+		<h1 class="display-1">Jessica L. Graham <mark> Portfolio </mark> </h1>
 	</header>
+		
+	<div class="btn-group btn-group-lg">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div>	
 		
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
@@ -52,8 +70,90 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 
 	<body>	
 		<h2> Main Page </h2>
-		<p> This page will host the about me section and main content of my portfolio. More information coming soon</p>
+		<p class="lead"> This page will host the about me section and main content of my portfolio.</p>
+		<p> More information coming soon <h1><span class="badge badge-pill badge-secondary">Hire Me! I have 0 Projects uploaded </span></h1></p>
 		
+		
+		<div class="row">
+			<div class="col bg-dark text-white"><p>A</p></div>
+			<div class="col bg-dark text-white","text-success"><p>B</p></div>
+			<div class="col bg-dark text-white"><p>C</p></div>
+		</div>
+		<div class="row">
+			<div class="col bg-dark text-white"><p>This will display <code>code </code></p></div>
+			<div class="col bg-dark text-white"><p>keyboard element <kbd> CTRL + </kbd></p></div>
+			<div class="col bg-dark text-white"><p>F</p></div>
+		</div>
+		
+		<div class="alert alert-success alert-dismissible fade show">
+		  <button type="button" class="close" data-dismiss="alert">&times;</button>
+		  <strong>Success!</strong> Indicates a successful or positive image uploaded.
+		</div>
+		
+		<img class="img-fluid mx-auto d-block" src="https://cdn.vox-cdn.com/thumbor/x5bPoUvbJhKWBIxX7LV2j_Bpi_8=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19287010/acastro_191014_1777_google_pixel_0005.0.jpg" alt="Chania">
+	
+
+		<!-- Green -->
+		<div class="progress">
+		  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:20%">20%</div>
+		</div>
+
+		<!-- Turquoise -->
+		<div class="progress">
+		  <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:30%"> 30%</div>
+		</div>
+
+		<!-- Orange -->
+		<div class="progress">
+		   <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:40%"> 40%</div>
+		</div>
+
+		<!-- Red -->
+		<div class="progress">
+		  <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:50%"> 50%</div>
+		</div>
+
+		<!-- Grey -->
+		<div class="progress">
+		  <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width:70%">70%</div>
+		</div>
+
+		<!-- Light Grey -->
+		<div class="progress border">
+		  <div class="progress-bar bg-light progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
+		</div>
+
+		<!-- Dark Grey -->
+		<div class="progress">
+		  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+		</div>
+		
+		<div class="container">
+		  <h2>Growing Spinners</h2>
+		  <p>Use the <code>.spinner-grow</code> class if you want the spinner/loader to grow instead of "spin":</p>
+												
+		  <div class="spinner-grow text-muted"></div>
+		  <div class="spinner-grow text-primary"></div>
+		  <div class="spinner-grow text-success"></div>
+		  <div class="spinner-grow text-info"></div>
+		  <div class="spinner-grow text-warning"></div>
+		  <div class="spinner-grow text-danger"></div>
+		  <div class="spinner-grow text-secondary"></div>
+		  <div class="spinner-grow text-dark"></div>
+		  <div class="spinner-grow text-light"></div>
+		</div>
+	
+		<!-- Center-aligned -->
+		<ul class="pagination justify-content-center" style="margin:20px 0">
+		  <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+		  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+		  <li class="page-item"><a class="page-link" href="#">2</a></li>
+		  <li class="page-item"><a class="page-link" href="#">3</a></li>
+		  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+
+	
+	
 	</body>
 
 
