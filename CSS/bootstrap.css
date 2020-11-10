@@ -4933,7 +4933,7 @@ tbody.collapse.show {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;
-  border-radius: 0.3rem;
+  border-radius: 0px;
 }
 
 @media (min-width: 576px) {
