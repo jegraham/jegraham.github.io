@@ -1,0 +1,84 @@
+/*** Importing the Google Font for the .header ***/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC');
+
+/*** Styling for the header including size, colour and decorative flare ***/
+.header{
+    font-size: 4rem;
+	font-family: Cinzel Decorative;
+    color: #FCFAEF;
+    float: center;  
+	overflow: auto;
+	padding: 1em;
+	margin: 0.25em 0.25em 0em 0.25em;
+	text-align:center;
+	position: relative;
+}
+
+/*** Adding background colour to the menu navigation ***/
+.menu{
+    overflow: hidden;
+    background-color:#1C0118;
+	padding: 0.1em;
+	margin: 0em 1em 1em 1em;
+}
+
+/*** Colouring and styling the links within the menu list ***/
+.menu a {
+	color: #42113C;
+	text-align: center;
+	text-decoration: none;
+	font-size: 2em;
+	border: 0.05em solid #42113C;
+	float: center;
+	display: block;
+	padding: 0.1em;
+	margin:0.1em;
+}
+
+/*** Colouring the Menu when mouse hovers over ***/
+.menu a:hover{
+	color: #6BD425;
+	background-color: #1C0118;
+	border: 0.05em solid #6BD425;
+}
+
+/*** Colouring the Menu item that is active (what page you the user is currently viewing) ***/
+.menu a.active{
+	color: #6BD425;
+	background-color: #370926;
+	border: 0.05em solid #6BD425;
+}
+
+
+/*** Moves menu to a horizontal layout ***/
+.menu li {
+	display: inline;
+	float: left;
+}
+
+/*** Move the Menu item to the right***/
+.menu .right{
+		float:right;
+}
+
+/*** Responsive Menu Bar for screens under 900px ***/
+@media screen and (max-width: 900px){
+	.header{
+		font-size:1.5em;
+	}
+	
+	.menu {
+		font-size:0.5em;
+	}
+	
+	.menu li{
+		float: none;
+	}
+	
+	.menu .right{
+		float:none;
+}
+}
+
+
