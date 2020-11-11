@@ -123,6 +123,12 @@ p{
 	
 }
 
+.resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
 
 /*** Previous website css
 
