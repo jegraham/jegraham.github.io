@@ -4945,7 +4945,7 @@ tbody.collapse.show {
 .jumbotron-fluid {
   padding-right: 0;
   padding-left: 0;
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 .alert {
