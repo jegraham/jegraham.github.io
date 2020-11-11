@@ -1,1 +1,2 @@
-Hello World! Name is Jessica, Jessica Graham to be exact. 
+Hello World! My name is Jessica Graham and this is my portfolio website. With this adventure, I am hoping to advance my knowledge in Github and refresh myself on web development. Some technologies and techniques I have used so far on this adventure is HTML, CSS, Javascript, Bootstrap and Github. Once the portfolio is complete I intend to work on other projects to expand my portfolio and advance the site. One of the advancements I am currently researching, is how to add analytics to the site (from scratch). I would also love to add some paralax scrolling and some custom made graphics.
+
