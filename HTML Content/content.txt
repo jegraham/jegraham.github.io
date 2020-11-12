@@ -1,19 +1,4 @@
-<!------------------------------------------------------------
-Jessica Graham 
-graham.jessica338@gmail.com
-Description: This page is suppossed to hold the content of the
-resume/portfolio
-
-
-
-
-
-
-https://www.w3schools.com/howto/howto_css_blog_layout.asp 
-
------------------------------------------------------------->
-<!DOCTYPE HTML>
-<html lang= "en">
+<! -- https://www.w3schools.com/howto/howto_css_blog_layout.asp -->
 
 <!------------------------------------------------------------
 https://jegraham.github.io/
@@ -43,7 +28,7 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 	
 	<!--- Typing references - https://speckyboy.com/css-javascript-text-animation-snippets/--->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-
+		
 	<!-- Importing the javascript class for typing in -->
 	<script src="../js/typing.js"></script>
 	
@@ -55,6 +40,7 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+	
 	
 	<!-- Header of the Portfolio, includes the -->
 	<div class="jumbotron jumbotron-fluid text-center bg-dark text-white" style="margin-bottom: 0px;"> 
@@ -70,6 +56,7 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 		</div>
 	</div>
 
+
 	<!-- This is the Navigation bar-->
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 	  <a class="navbar-brand" href="../index.html">Portfolio</a>
@@ -79,7 +66,7 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav">
 		  <li class="nav-item">
-			<a class="nav-link active bg-info" href="./content.html">Blog</a>
+			<a class="nav-link  active bg-info" href="./content.html">Blog</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="./Resume.html">Resume</a>
@@ -94,13 +81,10 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 	  </div>  
 	</nav>
 
-	<body> 
-		<h2> Blog </h2>
-		<h3>My First Post</h3>
-		<h4> November 2nd, 2020 @ 10:15pm</h4>
-		<p> This will be the blog content </p>
+	<body>
+		<div style="padding:10%"> 
+			<h1> Blog </h1>
+	
 	</body>
-   
-
-
+	
 </html>
