@@ -1,0 +1,34 @@
+/** Responsive Design - for fonts add in  style="font-size:10vw"**/
+/** Be more responsive https://www.w3schools.com/html/html_responsive.asp**/
+
+
+/**Printer Rules*/
+@media print {
+#header {display:none;}
+#content {display:none;}
+#comments {display:none;}
+#sidebar {display:none;}
+#footer {display:none;}
+
+.site-description {display:none;}
+.site-title {display:none;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
