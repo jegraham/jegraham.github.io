@@ -24,8 +24,12 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.css">	
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.min.css">	
 	
+	
+	<link rel="stylesheet" type="text/css" href="CSS/filtering.css">
+	
 	<!-- Importing the javascript class for typing in -->
 	<script src="js/typing.js"></script>
+	<script src="js/filtering.js"></script>
 	
 	<!-- This is the head that appears in the broswer tab -->
 	<head> 
@@ -76,151 +80,58 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 	  </div>  
 	</nav>
 
-	<!-- About Me Section-->
-	<div class="container" style="margin-top:30px">
-	  <div class="row">
-		<div class="col-sm-4">
-		  <h2>About Me</h2>
-		  <image class="embed-img-responsive border" style="display: block; max-width:100%; height: auto;" src="./Images/Avatar.png" alt="Avatar"></image>
-		  <p> Hi, my name is Jessica and I am passionate about STEM and learning new things! I discovered my passion for Computer Science by accident. How do you discover this by accident? Well, I started my high school 
-			career planning out all my courses to become a Medical Doctor, specifically a Dermatologist. In the plan I decided to take a computer course in Grade 10. I soon discovered that </p>
-		  
-		  <h3>Some Links</h3>
-		  <ul class="nav nav-tabs flex-column">
-			<li class="nav-item">
-			  <a class="nav-link" href="https://www.linkedin.com/in/jessica-graham-455261aa">Linkedin</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="https://github.com/jegraham/">Github</a>
-			</li>
-		  </ul>
-		  <hr class="d-sm-none">
-    </div>
 	
 	
-		<!-- Blog Content -->
-		<div class="col-sm-8">
-		  <h2>TITLE HEADING</h2>
-		  <h5>Title description, Dec 7, 2017</h5>
-		  <div class="fakeimg">Fake Image</div>
-		  <p>Some text..</p>
-		  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-		  <br>
-		  <h2>TITLE HEADING</h2>
-		  <h5>Title description, Sep 2, 2017</h5>
-		  <div class="fakeimg">Fake Image</div>
-		  <p>Some text..</p>
-		  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+	
+	<!-- Inspiration from https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+	<h2>PORTFOLIO</h2>
+	<div id="myBtnContainer">
+	  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+	  <button class="btn" onclick="filterSelection('java')"> Java</button>
+	  <button class="btn" onclick="filterSelection('cake')"> Interview Cake </button>
+	  <button class="btn" onclick="filterSelection('people')"> People</button>
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+		<!-- Building In House Calendar-->
+	  <div class="column java cake">
+		<div class="content">
+			<a href="https://github.com/jegraham/Calendar">
+		  <img src="./Images/shutterstock.com/calendar.jpg" alt="Calendar" style="width:100%">
+		  <!-- https://www.shutterstock.com/image-vector/hand-pen-mark-calendar-vector-flat-345128279 -->
+		  <h4>Building In-House Calendar</h4>
+		  </a>
+		  <p>Your company built an in-house calendar tool called HiCal. You want to add a feature to see the times in a day when everyone is available.</p>
+		</div>
+	  </div>
+	  <!-- Moving Letters In Place-->
+	  <div class="column java cake">
+		<div class="content">
+		  <img src="/Images/shuffle.jpg" alt="Shuffle" style="width:100%">
+		  <h4>Moving Letters in Place</h4>
+		  <p>Write a function that takes a list of characters and reverses the letters in place.</p>
+		  <a href="https://www.interviewcake.com/question/python/reverse-string-in-place?course=fc1&section=array-and-string-manipulation"> More </a>
 		</div>
 	  </div>
 	</div>
+	
+	
+	
+	
+	
+	
+	<!-- Fun Stuff that needs to be modified -->
+	<body>	
+		
+	</body>
+
+
 
 	<!-- Footer Section -->
 	<div class="jumbotron text-center" style="margin-bottom:0">
 	  <p>Footer</p>
 	</div>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-	<!-- Fun Stuff that needs to be modified -->
-	<body>	
-		<h2> Main <main>Page</main></h2>
-		<p class="lead"> This page will host the about me section and main content of my portfolio.</p>
-		<p> More information coming soon <h1><span class="badge badge-pill badge-secondary">Hire Me! I have 0 Projects uploaded </span></h1></p>
-		
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-4 bg-dark text-white"><p>A</p></div>
-				<div class="col-4 bg-dark text-white","text-success"><p>B</p></div>
-				<div class="col-4 bg-dark text-white"><p>C</p></div>
-			</div>
-			<div class="row">
-				<div class="col bg-dark text-white"><p>This will display <code>code </code></p></div>
-				<div class="col bg-dark text-white"><p>keyboard element <kbd> CTRL + </kbd></p></div>
-				<div class="col bg-dark text-white"><p>F</p></div>
-			</div>
-			
-			<div class="alert alert-success alert-dismissible fade show">
-			  <button type="button" class="close" data-dismiss="alert">&times;</button>
-			  <strong>Success!</strong> Indicates a successful or positive image uploaded.
-			</div>
-		</div>
-		
-		<img class="img-fluid mx-auto d-block" src="https://cdn.vox-cdn.com/thumbor/x5bPoUvbJhKWBIxX7LV2j_Bpi_8=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19287010/acastro_191014_1777_google_pixel_0005.0.jpg" alt="Chania">
-	
-
-		<!-- Green -->
-		<div class="progress">
-		  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:20%">20%</div>
-		</div>
-
-		<!-- Turquoise -->
-		<div class="progress">
-		  <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:30%"> 30%</div>
-		</div>
-
-		<!-- Orange -->
-		<div class="progress">
-		   <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:40%"> 40%</div>
-		</div>
-
-		<!-- Red -->
-		<div class="progress">
-		  <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:50%"> 50%</div>
-		</div>
-
-		<!-- Grey -->
-		<div class="progress">
-		  <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width:70%">70%</div>
-		</div>
-
-		<!-- Light Grey -->
-		<div class="progress border">
-		  <div class="progress-bar bg-light progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
-		</div>
-
-		<!-- Dark Grey -->
-		<div class="progress">
-		  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
-		</div>
-		
-		<div class="container">
-		  <h2>Growing Spinners</h2>
-		  <p>Use the <code>.spinner-grow</code> class if you want the spinner/loader to grow instead of "spin":</p>
-												
-		  <div class="spinner-grow text-muted"></div>
-		  <div class="spinner-grow text-primary"></div>
-		  <div class="spinner-grow text-success"></div>
-		  <div class="spinner-grow text-info"></div>
-		  <div class="spinner-grow text-warning"></div>
-		  <div class="spinner-grow text-danger"></div>
-		  <div class="spinner-grow text-secondary"></div>
-		  <div class="spinner-grow text-dark"></div>
-		  <div class="spinner-grow text-light"></div>
-		</div>
-	
-		<!-- Center-aligned -->
-		<ul class="pagination justify-content-center" style="margin:20px 0">
-		  <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-		  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-		  <li class="page-item"><a class="page-link" href="#">2</a></li>
-		  <li class="page-item"><a class="page-link" href="#">3</a></li>
-		  <li class="page-item"><a class="page-link" href="#">Next</a></li>
-		</ul>
-
-		<i class="fas fa-cloud"></i>
-	
-	</body>
-
-
-
 
 </html>
