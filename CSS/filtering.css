@@ -33,6 +33,7 @@ h1 {
 .column {
   float: left;
   width: 33.33%;
+  display: none; /* show columns by default */
 }
 
 /* Clear floats after rows */
@@ -51,6 +52,11 @@ h1 {
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
+}
+
+/* The "show" class is added to the filtered elements */
+.hide {
+  display: none;
 }
 
 /* Style the buttons */
