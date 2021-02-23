@@ -12,6 +12,16 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 <html lang= "en">
 
 	<!--- <link rel="stylesheet" type="text/css" href="stylesheet.css" media=""/>
+	<?php    
+		
+		include('./src/Home/header.html');
+		include('index.html');
+		include('./src/Home/bottom.html');
+	?>
+    
+
+
+
 	<link rel="" src="HTML%20Content/Header.html"></include>
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">	
 	<link rel="stylesheet" type="text/css" href="CSS/header.css"> --->
@@ -30,10 +40,7 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 	<script src="js/filtering.js"></script>
 
 	
-	
-	
-	
-		<!-- This is the head that appears in the broswer tab -->
+	<!-- This is the head that appears in the broswer tab -->
 	<head> 
 		<title> Jessica L. Graham Portfolio </title>
 		
@@ -42,47 +49,49 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
+	
+
+	
 	<!-- Header of the Portfolio, includes the -->
 	<div class="jumbotron jumbotron-fluid text-center bg-dark text-white" style="margin-bottom: 0px;"> 
 		<div class="container-fluid">
 			<h1 class="display-1 p-5 shadow">Jessica L. Graham Portfolio</h1>
 			
-			<h1>I am 
+			<h1>I am a
 			  <span
 				 class="txt-rotate bg-warning"
 				 data-period="3000"
-				 data-rotate='[ "a Developer.", "a Technical Analyst.", "a Life Long Learner."]'></span>
+				 data-rotate='[ "Developer.", "Technical Analyst.", "Life Long Learner." ]'></span>
 			</h1>
 		</div>
 	</div>
-
+	
 	<!-- This is the Navigation bar-->
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	  <a class="navbar-brand" href="./index.html">Portfolio</a>
+	  <a class="navbar-brand active bg-info" href="index.html">Portfolio</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav">
 		  <li class="nav-item">
-			<a class="nav-link active bg-info" href="HTML_Content/content.html">Blog</a>
+			<a class="nav-link" href="./HTML_Content/content.html">Blog</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="HTML_Content/Resume.html">Resume</a>
+			<a class="nav-link" href="./HTML_Content/Resume.html">Resume</a>
 		  </li>   
 		  <li class="nav-item">
-			<a class="nav-link" href="HTML_Content/About.html">About</a>
+			<a class="nav-link" href="./HTML_Content/About.html">About</a>
 		  </li>   
 		  <li class="nav-item">
-			<a class="nav-link" href="HTML_Content/Contact.html">Contact</a>
+			<a class="nav-link" href="./HTML_Content/Contact.html">Contact</a>
 		  </li>   		  
 		</ul>
 	  </div>  
 	</nav>
 	
-
 	
-	<div id="header"></div>
+	
 	
 	
 	<body>
@@ -96,8 +105,12 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 		alt="Web-Stat analytics"></a></noscript>
 		<!-- End Web-Stat code v 7.0 -->
 	</body>
-		
-	<!-- About Me Section-->
+	
+	
+
+
+	
+		<!-- About Me Section-->
 	<div class="container" style="margin-top:30px">
 	  <div class="row">
 		<div class="col-sm-4">
