@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import { Text, View } from 'react-native';
 import fetch from "node-fetch";
-import CONFIG from "../config";
+import CONFIG from "https://github.com/jegraham/Testing_Flask/blob/master/.idea/config.py";
 
 class ProjectApi{
 
     static async getProjects(){
-        let ep = CONFIG.URL + "/projects";
+        let ep = CONFIG.URL + "https://github.com/jegraham/Testing_Flask/blob/master/.idea/";
         try{
             let response = await fetch(ep);
             if(response.status !== 200){
