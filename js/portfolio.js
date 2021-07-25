@@ -1,3 +1,5 @@
+/**This Javascript file is meant for the portfolio to be built off of the
+Github API and output the information as the Github portfolio in "cards" **/
 
       async function loadProjects(){
         const apiRoot ="https://api.github.com/users/jegraham/repos"
