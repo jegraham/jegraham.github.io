@@ -6,7 +6,7 @@ direct through the pages as needed.
 
 FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 - Include About 
-- Inlcude Credits - Bootstrap, CDN
+- Include Credits - Bootstrap, CDN
 ------------------------------------------------------------>
 <!DOCTYPE HTML>
 <html lang="en">
@@ -17,43 +17,19 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 <link rel="stylesheet" type="text/css" href="CSS/header.css"> --->
 
 <!-- Importing Bootstrap -->
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.css">
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.min.css">
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.css">
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.min.css">
-<link rel="stylesheet" type="text/css" href="CSS/filtering.css">
-<link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="CSS/bootstrap-grid.css" rel="stylesheet" type="text/css">
+<link href="CSS/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="CSS/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+<link href="CSS/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+<link href="CSS/filtering.css" rel="stylesheet" type="text/css">
+<link href="CSS/portfolio.css" rel="stylesheet" type="text/css">
 
 <!-- Importing the javascript class for typing and filtering -->
+<script src="js/portfolio.js"></script>
 <script src="js/typing.js"></script>
 <script src="js/filtering.js"></script>
-<script src="js/portfolio.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/portfolio.js"></script>
 
 <!-- This is the head that appears in the broswer tab -->
 <head>
@@ -63,6 +39,7 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 
 <!-- Header of the Portfolio, includes the -->
 <div class="jumbotron jumbotron-fluid text-center bg-dark text-white" style="margin-bottom: 0px;">
@@ -81,7 +58,7 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 <!-- This is the Navigation bar-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="./index.html">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -102,10 +79,6 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
     </div>
 </nav>
 
-
-<div id="header"></div>
-
-
 <body>
 
 <!-- Begin Web-Stat code v 7.0 -->
@@ -114,11 +87,13 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
 		wts.src='https://wts.one/log7.js';document.head.appendChild(wts);
 		wts.onload = function(){ wtslog7(2051325,3); };
 
+
+
 </script>
 
 <noscript><a href="https://www.web-stat.com">
-    <img src="https://wts.one/7/3/2051325.png"
-         alt="Web-Stat analytics"></a></noscript>
+    <img alt="Web-Stat analytics"
+         src="https://wts.one/7/3/2051325.png"></a></noscript>
 <!-- End Web-Stat code v 7.0 -->
 </body>
 
@@ -127,8 +102,8 @@ FUTURE GOALS https://www.w3schools.com/w3css/w3css_templates.asp
     <div class="row">
         <div class="col-sm-4">
             <h2>About Me</h2>
-            <image class="embed-img-responsive border" style="display: block; max-width:100%; height: auto;"
-                   src="./Images/Avatar.PNG" alt="Avatar"></image>
+            <img alt="Avatar" class="embed-img-responsive border"
+                   src="./Images/Avatar.PNG" style="display: block; max-width:100%; height: auto;"></img>
             <p> Hi, my name is Jessica and I am passionate about STEM and learning new things! I discovered my passion
                 for Computer Science by accident. How do you discover this by accident? Well, I started my high school
                 career planning out all my courses to become a Medical Doctor, specifically a Dermatologist. In the plan
