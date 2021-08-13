@@ -554,11 +554,7 @@ pre code {
 }
 
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 130%;
 }
 
 @media (min-width: 576px) {
@@ -8956,7 +8952,7 @@ a.text-dark:hover, a.text-dark:focus {
     min-width: 992px !important;
   }
   .container {
-    min-width: 992px !important;
+    min-width: 100% !important;
   }
   .navbar {
     display: none;
