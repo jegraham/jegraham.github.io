@@ -1,5 +1,6 @@
-const fs = require('fs');
-const fetch = require('node-fetch');
+import fs from 'fs';
+import fetch from 'node-fetch';
+import osmtogeojson from 'osmtogeojson';
 
 const overpassUrl = 'https://overpass-api.de/api/interpreter';
 
@@ -27,17 +28,27 @@ async function fetchFireStations() {
     });
 
     if (!response.ok) {
-      throw new Error(`Overpass API returned ${response.status}`);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     const osmData = await response.json();
+    console.log('OSM Data:', osmData);
 
-    // Convert to GeoJSON
-    const osmtogeojson = require('osmtogeojson');
     const geojson = osmtogeojson(osmData);
+    console.log('GeoJSON:', geojson);
 
-    // Save to file
-    fs.writeFileSync('./backend/data/firestations.geojson', JSON.stringify(geojson, null, 2));
+    if (!geojson.features || geojson.features.length === 0) {
+      console.error('❌ No fire stations found in the GeoJSON data.');
+      return;
+    }
+
+    const outputPath = './backend/data/firestations.geojson';
+
+    // Clear the file before writing (optional)
+    fs.writeFileSync(outputPath, '');
+
+    // Write the GeoJSON data to the file
+    fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
     console.log('✅ Fire stations saved to backend/data/firestations.geojson');
   } catch (error) {
     console.error('❌ Error fetching fire stations:', error);

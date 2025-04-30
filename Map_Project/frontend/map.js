@@ -14,25 +14,45 @@ var durhamWMS = L.tileLayer.wms('https://gis.durham.ca/arcgis/services/Public/Op
     attribution: 'Durham Region GIS'
 }).addTo(map);
   
-fetch('/data/firestations.geojson')
-  .then(res => res.json())
+
+var fireIcon = L.icon({
+  iconUrl: 'https://img.icons8.com/emoji/48/000000/fire.png',  // Make sure you place this image in public folder
+  iconSize: [25, 25],               // Size of the icon
+  iconAnchor: [12, 25],             // Point of the icon that corresponds to marker's location
+  popupAnchor: [0, -25]             // Position of popup relative to icon
+
+});
+
+// Fetch fire stations data from the backend
+fetch('../backend/data/firestations.geojson')
+  .then(response => response.json())
   .then(data => {
-    L.geoJSON(data, {
-      pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, {
-          radius: 6,
-          fillColor: 'red',
-          color: '#900',
-          weight: 1,
-          fillOpacity: 0.8
-        });
+    // Handle polygon features
+    const polygonFeatures = data.features.filter(f => f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon');
+    L.geoJSON(polygonFeatures, {
+      style: function (feature) {
+        return {
+          color: 'red',
+          weight: 2,
+          fillColor: 'orange',
+          fillOpacity: 0.5
+        };
       },
       onEachFeature: function (feature, layer) {
-        if (feature.properties.name) {
-          layer.bindPopup(`<strong>${feature.properties.name}</strong>`);
-        } else {
-          layer.bindPopup(`Fire Station`);
-        }
+        const name = feature.properties.name || "Fire Station";
+        layer.bindPopup(`<strong>${name}</strong>`);
+
+        // Calculate centroid and add a marker
+        const centroid = turf.centroid(feature).geometry.coordinates;
+        L.marker([centroid[1], centroid[0]], {
+          icon: L.icon({
+            iconUrl: 'https://img.icons8.com/emoji/48/000000/fire.png',
+            iconSize: [32, 32],
+            iconAnchor: [16, 32],
+            popupAnchor: [0, -32]
+          })
+        }).addTo(map).bindPopup(`<strong>${name}</strong>`);
       }
     }).addTo(map);
-  });
+  })
+  .catch(error => console.error("Error loading fire stations:", error));

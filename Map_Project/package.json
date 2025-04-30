@@ -1,13 +1,15 @@
 {
-    "name": "durham-map-project",
-    "version": "1.0.0",
-    "description": "Live Durham Region Map with Dynamic Layers",
-    "main": "backend/server.js",
-    "scripts": {
-      "start": "node backend/server.js"
-    },
-    "dependencies": {
-      "express": "^4.18.2"
-    }
+  "name": "durham-map-project",
+  "version": "1.0.0",
+  "description": "Live Durham Region Map with Dynamic Layers",
+  "type": "module",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.0.0",
+    "osmtogeojson": "^3.0.0"
   }
-  
+}
