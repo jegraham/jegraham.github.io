@@ -15,3 +15,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://127.0.0.1:5500`);
 });
+
+//Fetch the Firestations data from the backend
+app.use('/data', express.static(path.join(__dirname, 'data')));
+
