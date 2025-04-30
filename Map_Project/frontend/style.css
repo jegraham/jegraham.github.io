@@ -6,8 +6,9 @@ body {
 }
 
 #map {
-    height: 90vh;
+    height: 500px;
     width: 100%;
     margin-top: 10px;
-    border: 2px solid #333;
+    border: 2px solid #630909;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
