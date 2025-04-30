@@ -8,10 +8,17 @@
 </head>
 <body>
     <h1>Durham Region Map</h1>
+    
+    <!-- Add the checkbox here -->
+    <label>
+        <input type="checkbox" id="toggleFireStations" checked>
+        Show Fire Stations
+    </label>
+    
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf/turf.min.js"></script>
-    <script type="module" src="./map.js"></script>
+    <script src="./map.js"></script>
 </body>
 </html>
