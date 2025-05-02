@@ -1,8 +1,8 @@
 // Variable to store the fire station layers
 let fireStationLayer;
-let fireStationMarkers = L.layerGroup(); // Layer group for flame icons
+let fireStationMarkers = L.layerGroup(); // Layer group for fire station circles
 
-// Fetch fire stations data from the backend
+// Fetch fire station data from the backend
 fetch('../backend/data/firestations.geojson')
     .then(response => response.json())
     .then(data => {
@@ -13,8 +13,8 @@ fetch('../backend/data/firestations.geojson')
             style: function (feature) {
                 return {
                     color: 'red',
-                    weight: 50,
-                    fillColor: 'orange',
+                    weight: 2,
+                    fillColor: 'red',
                     fillOpacity: 0.3, // Adjusted fill opacity for better visibility
                     opacity: 0.5    // Adjusted border opacity
                 };
@@ -23,16 +23,24 @@ fetch('../backend/data/firestations.geojson')
                 const name = feature.properties.name || "Fire Station";
                 layer.bindPopup(`<strong>${name}</strong>`);
 
-                // Calculate centroid and add a marker to the marker layer group
+                // Add a 100-meter radius circle around the fire station
                 const centroid = turf.centroid(feature).geometry.coordinates;
+                const circle = L.circle([centroid[1], centroid[0]], {
+                    radius: 1000, // Radius in meters
+                    color: 'orange', // Circle border color
+                    fillColor: 'orange', // Circle fill color
+                    fillOpacity: 0.3, // Circle fill transparency
+                    weight: 1 // Circle border weight
+                });
+                fireStationMarkers.addLayer(circle);
 
-                // Add a flame marker
+                // Add a fire icon marker at the centroid
                 const marker = L.marker([centroid[1], centroid[0]], {
                     icon: L.icon({
-                        iconUrl: 'https://img.icons8.com/emoji/48/000000/fire.png',
-                        iconSize: [25, 25],
-                        iconAnchor: [12, 12],
-                        popupAnchor: [0, -25]
+                        iconUrl: 'https://img.icons8.com/emoji/48/000000/fire.png', // Fire icon URL
+                        iconSize: [25, 25], // Icon size
+                        iconAnchor: [12, 12], // Anchor point of the icon
+                        popupAnchor: [0, -25] // Popup anchor point
                     })
                 }).bindPopup(`<strong>${name}</strong>`);
                 fireStationMarkers.addLayer(marker);

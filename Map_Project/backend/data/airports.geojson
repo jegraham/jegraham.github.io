@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/123456789",
+      "properties": {
+        "name": "Oshawa Executive Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.894, 43.922]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/987654321",
+      "properties": {
+        "name": "Buttonville Municipal Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.378, 43.860]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/112233445",
+      "properties": {
+        "name": "Toronto Pearson International Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.630, 43.677]
+      }
+    }
+  ]
+}
