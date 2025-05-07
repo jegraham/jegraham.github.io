@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/123456789",
+      "properties": {
+        "name": "Durham Regional Police Service",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.894, 43.922]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/987654321",
+      "properties": {
+        "name": "Oshawa Police Station",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.865, 43.897]
+      }
+    }
+  ]
+}
