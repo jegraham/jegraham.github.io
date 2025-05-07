@@ -10,45 +10,64 @@ fetch('../backend/data/airports.geojson')
 
         airportLayer = L.geoJSON(pointFeatures, {
             onEachFeature: function (feature, layer) {
-                // const name = feature.properties.name || "Airport";
-                layer.bindPopup(`<strong>${name}</strong>`);
+                const name = feature.properties.name || "Airport";
 
-                // Add a 100-meter radius circle around the airport
-                const circle = L.circle(layer.getLatLng(), {
+                // Add concentric circles with varying opacity
+                const latLng = layer.getLatLng();
+
+                // Innermost circle (very dark)
+                const innerCircle = L.circle(latLng, {
+                    radius: 1000, // Radius in meters
+                    color: 'red', // Circle border color
+                    fillColor: 'red', // Circle fill color
+                    fillOpacity: 0.7, // Darkest opacity
+                    weight: 0 // No border
+                });
+                airportMarkers.addLayer(innerCircle);
+
+                // Middle circle (medium dark)
+                const middleCircle = L.circle(latLng, {
+                    radius: 3000, // Radius in meters
+                    color: 'red', // Circle border color
+                    fillColor: 'red', // Circle fill color
+                    fillOpacity: 0.5, // Medium opacity
+                    weight: 0 // No border
+                });
+                airportMarkers.addLayer(middleCircle);
+
+                // Outermost circle (light)
+                const outerCircle = L.circle(latLng, {
                     radius: 5000, // Radius in meters
                     color: 'red', // Circle border color
                     fillColor: 'red', // Circle fill color
-                    fillOpacity: 0.3, // Circle fill transparency
-                    weight: 1 // Circle border weight
+                    fillOpacity: 0.3, // Lightest opacity
+                    weight: 0 // No border
                 });
-                airportMarkers.addLayer(circle);
+                airportMarkers.addLayer(outerCircle);
 
                 // Add an airplane marker
-                const marker = L.marker(layer.getLatLng(), {
+                const marker = L.marker(latLng, {
                     icon: L.icon({
-                        iconUrl: 'https://img.icons8.com/emoji/48/000000/small-airplane.png',
-                        iconSize: [35, 35],
-                        iconAnchor: [15, 15],
-                        popupAnchor: [0, -25]
+                        iconUrl: 'https://img.icons8.com/emoji/48/000000/small-airplane.png', // Airplane icon URL
+                        iconSize: [35, 35], // Icon size
+                        iconAnchor: [15, 15], // Anchor point of the icon
+                        popupAnchor: [0, -25] // Popup anchor point
                     })
-                }).bindPopup(`<strong>${name}</strong>`);
+                }).bindPopup(`<strong>${name}</strong>`); // Popup with airport name
                 airportMarkers.addLayer(marker);
             }
         });
 
-        // Add the airport layer and markers to the map by default
-        // map.addLayer(airportLayer);
+        // Add the airport markers to the map by default
         map.addLayer(airportMarkers);
 
         // Add event listener for the toggle checkbox
         document.getElementById('toggleAirports').addEventListener('change', function (e) {
             if (e.target.checked) {
-                // Add the airport layer and markers to the map
-                map.addLayer(airportLayer);
+                // Add the airport markers to the map
                 map.addLayer(airportMarkers);
             } else {
-                // Remove the airport layer and markers from the map
-                map.removeLayer(airportLayer);
+                // Remove the airport markers from the map
                 map.removeLayer(airportMarkers);
             }
         });

@@ -6,62 +6,71 @@ let policeStationMarkers = L.layerGroup(); // Layer group for police station cir
 fetch('../backend/data/policestations.geojson')
     .then(response => response.json())
     .then(data => {
-        // Handle polygon features
-        const polygonFeatures = data.features.filter(f => f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon');
+        // Handle point features
+        const pointFeatures = data.features.filter(f => f.geometry.type === 'Point');
 
-        policeStationLayer = L.geoJSON(polygonFeatures, {
-            style: function (feature) {
-                return {
-                    color: 'blue',
-                    weight: 2,
-                    fillColor: 'blue',
-                    fillOpacity: 0.3, // Adjusted fill opacity for better visibility
-                    opacity: 0.5    // Adjusted border opacity
-                };
-            },
+        policeStationLayer = L.geoJSON(pointFeatures, {
             onEachFeature: function (feature, layer) {
                 const name = feature.properties.name || "Police Station";
-                layer.bindPopup(`<strong>${name}</strong>`);
 
-                // Calculate the centroid of the police station polygon
-                const centroid = turf.centroid(feature).geometry.coordinates;
+                // Get the coordinates of the police station point
+                const coordinates = feature.geometry.coordinates;
+                const latLng = [coordinates[1], coordinates[0]];
 
-                // Add a 100-meter radius circle around the police station
-                const circle = L.circle([centroid[1], centroid[0]], {
-                    radius: 10000, // Radius in meters
+                // Add concentric circles with varying opacity
+                // Innermost circle (very dark)
+                const innerCircle = L.circle(latLng, {
+                    radius: 500, // Radius in meters
                     color: 'blue', // Circle border color
                     fillColor: 'blue', // Circle fill color
-                    fillOpacity: 0.3, // Circle fill transparency
-                    weight: 1 // Circle border weight
+                    fillOpacity: 0.7, // Darkest opacity
+                    weight: 0 // No border
                 });
-                policeStationMarkers.addLayer(circle);
+                policeStationMarkers.addLayer(innerCircle);
 
-                // Add a police icon marker at the centroid
-                const marker = L.marker([centroid[1], centroid[0]], {
+                // Middle circle (medium dark)
+                const middleCircle = L.circle(latLng, {
+                    radius: 1000, // Radius in meters
+                    color: 'blue', // Circle border color
+                    fillColor: 'blue', // Circle fill color
+                    fillOpacity: 0.5, // Medium opacity
+                    weight: 0 // No border
+                });
+                policeStationMarkers.addLayer(middleCircle);
+
+                // Outermost circle (light)
+                const outerCircle = L.circle(latLng, {
+                    radius: 1500, // Radius in meters
+                    color: 'blue', // Circle border color
+                    fillColor: 'blue', // Circle fill color
+                    fillOpacity: 0.3, // Lightest opacity
+                    weight: 0 // No border
+                });
+                policeStationMarkers.addLayer(outerCircle);
+
+                // Add a police car icon marker at the police station location
+                const marker = L.marker(latLng, {
                     icon: L.icon({
-                        iconUrl: 'https://img.icons8.com/emoji/48/000000/police-car-light.png', // Police icon URL
-                        iconSize: [35, 35], // Icon size
-                        iconAnchor: [17, 17], // Anchor point of the icon
+                        iconUrl: 'https://img.icons8.com/emoji/48/000000/oncoming-police-car.png', // Police car icon URL
+                        iconSize: [20, 20], // Icon size
+                        iconAnchor: [10, 10], // Anchor point of the icon
                         popupAnchor: [0, -25] // Popup anchor point
                     })
-                }).bindPopup(`<strong>${name}</strong>`);
+                }).bindPopup(`<strong>${name}</strong>`); // Popup with police station name
                 policeStationMarkers.addLayer(marker);
             }
         });
 
-        // Add the police station layer and markers to the map by default
-        map.addLayer(policeStationLayer);
+        // Add the police station markers to the map by default
         map.addLayer(policeStationMarkers);
 
         // Add event listener for the toggle checkbox
         document.getElementById('togglePoliceStations').addEventListener('change', function (e) {
             if (e.target.checked) {
-                // Add the police station layer and markers to the map
-                map.addLayer(policeStationLayer);
+                // Add the police station markers to the map
                 map.addLayer(policeStationMarkers);
             } else {
-                // Remove the police station layer and markers from the map
-                map.removeLayer(policeStationLayer);
+                // Remove the police station markers from the map
                 map.removeLayer(policeStationMarkers);
             }
         });
