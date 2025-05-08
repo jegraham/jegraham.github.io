@@ -1,13 +1,14 @@
-// Variable to store the firestations layers
+// Variable to store firestation layers
 let firestationsLayer;
-let firestationsMarkers = L.layerGroup(); // Layer group for firestations markers
+let firestationsMarkers = L.layerGroup();
+let firestationsPointsLayer; // NEW
 
-// Fetch fire station data from the backend
 fetch('../backend/data/firestations.geojson')
     .then(response => response.json())
     .then(data => {
-        // Filter features by geometry type
-        const polygonFeatures = data.features.filter(f => f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon');
+        // Polygons
+        const polygonFeatures = data.features.filter(f => 
+            f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon');
 
         firestationsLayer = L.geoJSON(polygonFeatures, {
             style: function (feature) {
@@ -15,73 +16,82 @@ fetch('../backend/data/firestations.geojson')
                     color: 'red',
                     weight: 2,
                     fillColor: 'red',
-                    fillOpacity: 0.3, // Adjusted fill opacity for better visibility
-                    opacity: 0.5    // Adjusted border opacity
+                    fillOpacity: 0.3,
+                    opacity: 0.5
                 };
             },
             onEachFeature: function (feature, layer) {
                 const name = feature.properties.name || "Fire Station";
                 layer.bindPopup(`<strong>${name}</strong>`);
 
-                // Calculate the centroid of the fire station polygon
-                if (feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon') {
-                    const centroid = turf.centroid(feature).geometry.coordinates;
-                    const latLng = [centroid[1], centroid[0]];
+                const centroid = turf.centroid(feature).geometry.coordinates;
+                const latLng = [centroid[1], centroid[0]];
 
-                    // Add concentric circles with varying opacity
-                    const innerCircle = L.circle(latLng, {
-                        radius: 300, // Radius in meters
-                        color: 'orange', // Circle border color
-                        fillColor: 'orange', // Circle fill color
-                        fillOpacity: 0.7, // Darkest opacity
-                        weight: 0 // No border
-                    });
-                    firestationsMarkers.addLayer(innerCircle);
-
-                    const middleCircle = L.circle(latLng, {
-                        radius: 500, // Radius in meters
-                        color: 'orange', // Circle border color
-                        fillColor: 'orange', // Circle fill color
-                        fillOpacity: 0.5, // Medium opacity
-                        weight: 0 // No border
-                    });
-                    firestationsMarkers.addLayer(middleCircle);
-
-                    const outerCircle = L.circle(latLng, {
-                        radius: 800, // Radius in meters
-                        color: 'orange', // Circle border color
-                        fillColor: 'orange', // Circle fill color
-                        fillOpacity: 0.3, // Lightest opacity
-                        weight: 0 // No border
-                    });
-                    firestationsMarkers.addLayer(outerCircle);
-
-                    // Add a fire icon marker at the centroid
-                    const marker = L.marker(latLng, {
-                        icon: L.icon({
-                            iconUrl: 'https://img.icons8.com/emoji/48/000000/fire--v1.png', // Flame icon URL
-                            iconSize: [25, 25], // Icon size
-                            iconAnchor: [12, 12], // Anchor point of the icon
-                            popupAnchor: [0, 0] // Popup anchor point
-                        })
-                    }).bindPopup(`<strong>${name}</strong>`);
-                    firestationsMarkers.addLayer(marker);
-                }
+                addCirclesAndMarker(latLng, name);
             }
         });
 
-        // Add the fire station layer and markers to the map by default
+        // Points (nodes)
+        const pointFeatures = data.features.filter(f => f.geometry.type === 'Point');
+
+        firestationsPointsLayer = L.geoJSON(pointFeatures, {
+            pointToLayer: function (feature, latlng) {
+                const name = feature.properties.name || "Fire Station";
+                addCirclesAndMarker([latlng.lat, latlng.lng], name);
+                return null; // Don't add default marker here
+            }
+        });
+
+        function addCirclesAndMarker(latLng, name) {
+            const inner = L.circle(latLng, {
+                radius: 300,
+                color: 'orange',
+                fillColor: 'orange',
+                fillOpacity: 0.7,
+                weight: 0
+            });
+
+            const middle = L.circle(latLng, {
+                radius: 500,
+                color: 'orange',
+                fillColor: 'orange',
+                fillOpacity: 0.5,
+                weight: 0
+            });
+
+            const outer = L.circle(latLng, {
+                radius: 800,
+                color: 'orange',
+                fillColor: 'orange',
+                fillOpacity: 0.3,
+                weight: 0
+            });
+
+            const marker = L.marker(latLng, {
+                icon: L.icon({
+                    iconUrl: 'https://img.icons8.com/emoji/48/000000/fire--v1.png',
+                    iconSize: [25, 25],
+                    iconAnchor: [12, 12],
+                    popupAnchor: [0, 0]
+                })
+            }).bindPopup(`<strong>${name}</strong>`);
+
+            firestationsMarkers.addLayer(inner);
+            firestationsMarkers.addLayer(middle);
+            firestationsMarkers.addLayer(outer);
+            firestationsMarkers.addLayer(marker);
+        }
+
+        // Add layers to map
         map.addLayer(firestationsLayer);
         map.addLayer(firestationsMarkers);
+        map.addLayer(firestationsPointsLayer); // Optional, for debug
 
-        // Add event listener for the toggle checkbox
         document.getElementById('toggleFireStations').addEventListener('change', function (e) {
             if (e.target.checked) {
-                // Add the fire station layer and markers to the map
                 map.addLayer(firestationsLayer);
                 map.addLayer(firestationsMarkers);
             } else {
-                // Remove the fire station layer and markers from the map
                 map.removeLayer(firestationsLayer);
                 map.removeLayer(firestationsMarkers);
             }
