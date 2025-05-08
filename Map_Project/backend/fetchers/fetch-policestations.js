@@ -11,13 +11,13 @@ if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true });
 }
 
-// Overpass API query to fetch places with "police" in the name
+// Overpass API query to fetch police stations within the specified area
 const overpassQuery = `
 [out:json];
 (
-    node["amenity"="police"](43.5,-79.5,44.5,-78);
-    way["amenity"="police"](43.5,-79.5,44.5,-78);
-    relation["amenity"="police"](43.5,-79.5,44.5,-78);
+    node["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
+    way["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
+    relation["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
 );
 out body;
 `;
@@ -42,7 +42,7 @@ fetch('https://overpass-api.de/api/interpreter', {
                 type: 'Feature',
                 id: `node/${element.id}`,
                 properties: {
-                    name: element.tags?.name || 'Unnamed Police Feature',
+                    name: element.tags?.name || 'Unnamed Police Station',
                     tags: element.tags || {}, // Include all tags for debugging
                 },
                 geometry: {
@@ -56,6 +56,6 @@ fetch('https://overpass-api.de/api/interpreter', {
 
         // Save GeoJSON to a file
         writeFileSync(outputFile, JSON.stringify(geojson, null, 2));
-        console.log(`All places with "police" in the name saved to ${outputFile}`);
+        console.log(`Police stations data saved to ${outputFile}`);
     })
-    .catch(error => console.error('Error fetching police data:', error));
+    .catch(error => console.error('Error fetching police station data:', error));

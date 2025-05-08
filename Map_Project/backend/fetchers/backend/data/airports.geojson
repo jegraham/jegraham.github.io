@@ -3,113 +3,76 @@
   "features": [
     {
       "type": "Feature",
-      "id": "node/329908426",
+      "id": "node/1042023458",
       "properties": {
-        "name": "Oshawa Airport",
-        "tags": {
-          "fixme": "this military airfield and the civil airport have duplicate icao and iata keys",
-          "iata": "YOO",
-          "icao": "CYOO",
-          "military": "airfield",
-          "name": "Oshawa Airport",
-          "wikidata": "Q3913517",
-          "wikipedia": "en:Oshawa Airport"
-        }
+        "name": "Port Hope (Peter's Field)",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -78.8950068,
-          43.9227762
+          -78.4269762,
+          44.0248844
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "node/379766273",
+      "id": "node/1042023459",
       "properties": {
-        "name": "Fairport Convenience",
-        "tags": {
-          "name": "Fairport Convenience",
-          "shop": "convenience"
-        }
+        "name": "Wesleyville Airstrip",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1072169,
-          43.8241547
+          -78.4441853,
+          43.9401966
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "node/380181089",
+      "id": "node/1042024171",
       "properties": {
-        "name": "Kingston EB @ Fairport",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Kingston EB @ Fairport",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "1781",
-          "shelter": "yes"
-        }
+        "name": "Beaverton North",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1066857,
-          43.8234479
+          -79.127269,
+          44.459454
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "node/558715643",
+      "id": "node/1042025588",
       "properties": {
-        "name": "Fairport Beach",
-        "tags": {
-          "attribution": "Natural Resources Canada",
-          "canvec:CODE:1580010": "080",
-          "canvec:UUID": "806f27b5fc1e4222a3f7eb17a9e90e77",
-          "name": "Fairport Beach",
-          "name:fr": "Fairport Beach",
-          "place": "neighbourhood",
-          "source": "CanVec_Import_2009"
-        }
+        "name": "Fenelon Falls/Sturgeon Lake Seaplane Base",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1024817,
-          43.8139618
+          -78.7303009,
+          44.5238991
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "node/558715676",
+      "id": "node/1042027232",
       "properties": {
-        "name": "Fairport",
-        "tags": {
-          "attribution": "Natural Resources Canada",
-          "canvec:CODE:1580010": "080",
-          "canvec:UUID": "6f093a662d2b473487cb3e9d399e7fff",
-          "name": "Fairport",
-          "name:fr": "Fairport",
-          "place": "neighbourhood",
-          "source": "CanVec_Import_2009"
-        }
+        "name": "Holland Landing Airpark",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.0804062,
-          43.8216335
+          -79.4950027,
+          44.0894012
         ]
       }
     },
@@ -118,17 +81,7 @@
       "id": "node/1042028359",
       "properties": {
         "name": "Lindsay Airport (CNF4)",
-        "tags": {
-          "aeroway": "aerodrome",
-          "ele": "273",
-          "ele:ft": "895' ASL",
-          "icao": "CNF4",
-          "name": "Lindsay Airport (CNF4)",
-          "operator": "City of Kawartha Lakes",
-          "source": "Canadian Flight Supplement",
-          "wikidata": "Q3913596",
-          "wikipedia": "en:Lindsay/Kawartha Lakes Municipal Airport"
-        }
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
@@ -140,15 +93,55 @@
     },
     {
       "type": "Feature",
+      "id": "node/1042028409",
+      "properties": {
+        "name": "Orillia Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3105776,
+          44.6794247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028476",
+      "properties": {
+        "name": "Gooderham/Pencil Lake Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3499985,
+          44.7999992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028513",
+      "properties": {
+        "name": "Keene/Elmhirst's Resort Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.108382,
+          44.2483787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/1042028610",
       "properties": {
         "name": "Markham Airport",
-        "tags": {
-          "aeroway": "aerodrome",
-          "name": "Markham Airport",
-          "source": "ourairports.com",
-          "wikidata": "Q652515"
-        }
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
@@ -160,53 +153,76 @@
     },
     {
       "type": "Feature",
-      "id": "node/1273832244",
+      "id": "node/1042028627",
       "properties": {
-        "name": "Fairport NB @ Bonita",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Fairport NB @ Bonita",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "network:wikipedia": "en:Durham Region Transit",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "1984",
-          "shelter": "no"
-        }
+        "name": "Orillia/Lake St John Seaplane Base",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1112338,
-          43.8339707
+          -79.307367,
+          44.6816771
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "node/1273834189",
+      "id": "node/1042028658",
       "properties": {
-        "name": "Strouds EB @ Fairport",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Strouds EB @ Fairport",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "network:wikipedia": "en:Durham Region Transit",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "1583",
-          "shelter": "no"
-        }
+        "name": "Port Stanton/Sparrow Lake Seaplane Base",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1110118,
-          43.8326199
+          -79.4109087,
+          44.7992912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028949",
+      "properties": {
+        "name": "Stirling Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5616989,
+          44.2414017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042029123",
+      "properties": {
+        "name": "Orillia/Matchedash Lake Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5,
+          44.7832985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042029233",
+      "properties": {
+        "name": "Norwood Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.9997025,
+          44.3650017
         ]
       }
     },
@@ -215,14 +231,7 @@
       "id": "node/1860910040",
       "properties": {
         "name": "Peterborough Airport",
-        "tags": {
-          "aeroway": "aerodrome",
-          "iata": "YPQ",
-          "icao": "CYPQ",
-          "name": "Peterborough Airport",
-          "wikidata": "Q905906",
-          "wikipedia": "en:Peterborough Airport"
-        }
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
@@ -234,1515 +243,17 @@
     },
     {
       "type": "Feature",
-      "id": "node/2532685335",
+      "id": "node/7519672586",
       "properties": {
-        "name": "Airport Crash Gate",
-        "tags": {
-          "bicycle": "no",
-          "foot": "no",
-          "horse": "no",
-          "motor_vehicle": "yes",
-          "name": "Airport Crash Gate"
-        }
+        "name": "Rollick Airpark",
+        "aeroway": "aerodrome"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3900396,
-          43.6286332
+          -79.478565,
+          44.1429084
         ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/3466639235",
-      "properties": {
-        "name": "Queens Quay West, Billy Bishop Airport",
-        "tags": {
-          "name": "Queens Quay West, Billy Bishop Airport",
-          "network": "TTC",
-          "network:wikidata": "Q249404",
-          "operator": "Toronto Transit Commission",
-          "operator:short": "TTC",
-          "operator:wikidata": "Q17978",
-          "public_transport": "stop_position",
-          "railway": "tram_stop",
-          "source:name": "Announced on streetcar 2019-05-24",
-          "tram": "yes",
-          "wheelchair": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.397784,
-          43.6360913
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/4572112567",
-      "properties": {
-        "name": "Taunton EB @ Airport",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Taunton EB @ Airport",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "838",
-          "shelter": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -78.8986899,
-          43.9284241
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/4753049685",
-      "properties": {
-        "name": "Billy Bishop Airport Duty Free",
-        "tags": {
-          "addr:city": "Toronto",
-          "addr:province": "Ontario",
-          "name": "Billy Bishop Airport Duty Free",
-          "shop": "alcohol"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3948652,
-          43.6316022
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/6468793066",
-      "properties": {
-        "name": "Bathurst Street, Billy Bishop Airport",
-        "tags": {
-          "name": "Bathurst Street, Billy Bishop Airport",
-          "network": "TTC",
-          "network:wikidata": "Q249404",
-          "operator": "Toronto Transit Commission",
-          "operator:short": "TTC",
-          "operator:wikidata": "Q17978",
-          "public_transport": "stop_position",
-          "railway": "tram_stop",
-          "source:name": "Announced on streetcar 2019-05-24",
-          "tram": "yes",
-          "wheelchair": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3988668,
-          43.6360052
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/6927605886",
-      "properties": {
-        "name": "Billy Bishop Airport - Queens Quay",
-        "tags": {
-          "bench": "no",
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Billy Bishop Airport - Queens Quay",
-          "network": "Billy Bishop Airport Complimentary Shuttle",
-          "public_transport": "platform",
-          "shelter": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.397003,
-          43.6341822
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/8589237997",
-      "properties": {
-        "name": "Fairport Montessori Academy",
-        "tags": {
-          "amenity": "school",
-          "grades": "1 to 11",
-          "name": "Fairport Montessori Academy"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -78.9088076,
-          43.8965963
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/9524811167",
-      "properties": {
-        "name": "Kingston WB @ Fairport",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Kingston WB @ Fairport",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "network:wikipedia": "en:Durham Region Transit",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "1612",
-          "shelter": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1063188,
-          43.823862
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/11024035174",
-      "properties": {
-        "name": "Glenanna WB @ Fairport",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Glenanna WB @ Fairport",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "network:wikipedia": "en:Durham Region Transit",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "1927",
-          "shelter": "no"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1123192,
-          43.8378751
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/11024035176",
-      "properties": {
-        "name": "Fairport SB @ Voyager",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Fairport SB @ Voyager",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "network:wikipedia": "en:Durham Region Transit",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "1982",
-          "shelter": "no"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1118582,
-          43.8350811
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/11024035177",
-      "properties": {
-        "name": "Fairport SB @ Stroud's",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Fairport SB @ Stroud's",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "network:wikipedia": "en:Durham Region Transit",
-          "operator": "Durham Region Transit",
-          "public_transport": "platform",
-          "ref": "1983",
-          "shelter": "no"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1109334,
-          43.83287
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/11034900025",
-      "properties": {
-        "name": "Finch EB @ Fairport",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Finch EB @ Fairport",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "public_transport": "platform",
-          "ref": "1887"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1147762,
-          43.8410779
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/11034900026",
-      "properties": {
-        "name": "Finch WB @ Fairport",
-        "tags": {
-          "bus": "yes",
-          "highway": "bus_stop",
-          "name": "Finch WB @ Fairport",
-          "network": "Durham Region Transit",
-          "network:wikidata": "Q5316548",
-          "public_transport": "platform",
-          "ref": "1873",
-          "shelter": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1142781,
-          43.8413239
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/11308271945",
-      "properties": {
-        "name": "Airport at Brealey",
-        "tags": {
-          "bus": "yes",
-          "departures_board": "no",
-          "highway": "bus_stop",
-          "name": "Airport at Brealey",
-          "network": "Peterborough Transit",
-          "network:wikidata": "Q7178037",
-          "operator": "Peterborough Transit",
-          "public_transport": "platform",
-          "ref": "1756",
-          "shelter": "no",
-          "wheelchair": "no"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -78.3650434,
-          44.2605711
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/4078842",
-      "properties": {
-        "name": "Toronto City Centre Airport Ferry",
-        "tags": {
-          "bicycle": "yes",
-          "description": "There is no bridge here for political reasons",
-          "duration": "00:01:30",
-          "foot": "yes",
-          "interval": "00:15",
-          "motor_vehicle": "yes",
-          "name": "Toronto City Centre Airport Ferry",
-          "route": "ferry",
-          "website": "https://www.billybishopairport.com/to-from/ferry"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/14346692",
-      "properties": {
-        "name": "Downsview Airport",
-        "tags": {
-          "disused:aeroway": "aerodrome",
-          "icao": "CYZD",
-          "name": "Downsview Airport",
-          "operator": "Bombardier Aerospace",
-          "ref": "YZD",
-          "type": "civil",
-          "wikidata": "Q118696",
-          "wikipedia": "en:Downsview Airport"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/14351459",
-      "properties": {
-        "name": "Buttonville Municipal Airport",
-        "tags": {
-          "aerodrome:type": "civil",
-          "disused:aeroway": "aerodrome",
-          "iata": "YKZ",
-          "icao": "CYKZ",
-          "landuse": "industrial",
-          "name": "Buttonville Municipal Airport",
-          "ref": "YKZ",
-          "type": "civil",
-          "wikidata": "Q2928993",
-          "wikipedia": "en:Buttonville Municipal Airport"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/23102287",
-      "properties": {
-        "name": "Buttonville Airport Terminal",
-        "tags": {
-          "aeroway": "terminal",
-          "building": "yes",
-          "name": "Buttonville Airport Terminal"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/28535255",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "maxspeed": "40",
-          "name": "Fairport Road",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/29962999",
-      "properties": {
-        "name": "Airport Boulevard",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "name": "Airport Boulevard",
-          "sidewalk": "no",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/32867151",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/32963424",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "residential",
-          "lanes": "2",
-          "name": "Fairport Road",
-          "sidewalk": "no",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33407104",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "lanes:backward": "1",
-          "lanes:forward": "1",
-          "maxaxleload": "5",
-          "maxspeed": "40",
-          "name": "Fairport Road",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33412536",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "name": "Fairport Road",
-          "sidewalk": "separate",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33930327",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33930747",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33936640",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "bridge": "yes",
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "layer": "1",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33940068",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33947033",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33959361",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33959362",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33961828",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/33962498",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "source": "Geobase_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/43809836",
-      "properties": {
-        "name": "Billy Bishop Airport Hangar",
-        "tags": {
-          "aeroway": "hangar",
-          "attribution": "Natural Resources Canada",
-          "building": "hangar",
-          "canvec:CODE": "2010252",
-          "canvec:UUID": "3894d7c121ae44d2981b8d215517882c",
-          "name": "Billy Bishop Airport Hangar",
-          "source": "CanVec_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/43934967",
-      "properties": {
-        "name": "Fairport Cemetery",
-        "tags": {
-          "attribution": "Natural Resources Canada",
-          "canvec:CODE": "1000032",
-          "canvec:UUID": "11CF41F87FE8E5F4E0409C8467120387",
-          "landuse": "cemetery",
-          "name": "Fairport Cemetery",
-          "source": "CanVec_Import_2009"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/45844992",
-      "properties": {
-        "name": "Dunbarton-Fairport United Church",
-        "tags": {
-          "addr:housenumber": "1066",
-          "addr:street": "Dunbarton Road",
-          "amenity": "place_of_worship",
-          "building": "church",
-          "denomination": "united",
-          "name": "Dunbarton-Fairport United Church",
-          "religion": "christian"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/111963522",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "maxspeed": "40",
-          "name": "Fairport Road",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/111963524",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "name": "Fairport Road",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/136029008",
-      "properties": {
-        "name": "Fairport Beach Public School",
-        "tags": {
-          "addr:city": "Pickering",
-          "addr:housenumber": "754",
-          "addr:postcode": "L1W 2H5",
-          "addr:street": "Oklahoma Drive",
-          "amenity": "school",
-          "fax": "+1-905-839-1457",
-          "isced:level": "1;2",
-          "name": "Fairport Beach Public School",
-          "operator": "Durham District School Board",
-          "operator:short": "DDSB",
-          "operator:type": "public",
-          "operator:wikidata": "Q5316505",
-          "operator:wikipedia": "en:Durham District School Board",
-          "phone": "+1-905-839-1451",
-          "school:language": "english",
-          "source": "Bing"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/143179010",
-      "properties": {
-        "name": "Toronto City Centre Airport Firehall",
-        "tags": {
-          "amenity": "fire_station",
-          "building": "yes",
-          "name": "Toronto City Centre Airport Firehall"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/172243435",
-      "properties": {
-        "name": "Airport Boulevard",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "1",
-          "name": "Airport Boulevard",
-          "oneway": "yes",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/172244004",
-      "properties": {
-        "name": "Airport Self Storage",
-        "tags": {
-          "addr:city": "Oshawa",
-          "addr:housenumber": "425",
-          "addr:street": "Taunton Road West",
-          "landuse": "industrial",
-          "name": "Airport Self Storage",
-          "shop": "storage_rental"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/179065390",
-      "properties": {
-        "name": "Airport Tunnel",
-        "tags": {
-          "conveying": "yes",
-          "highway": "footway",
-          "indoor": "yes",
-          "layer": "-1",
-          "level": "-6",
-          "lit": "yes",
-          "name": "Airport Tunnel",
-          "stroller": "yes",
-          "tunnel": "yes",
-          "website": "https://www.billybishopairport.com/to-from/pedestrian-tunnel",
-          "wikipedia": "en:Billy Bishop Toronto City Airport pedestrian tunnel"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/243011716",
-      "properties": {
-        "name": "Buttonville Airport Terminal",
-        "tags": {
-          "aeroway": "terminal",
-          "building": "yes",
-          "name": "Buttonville Airport Terminal",
-          "operator": "Toronto Airways Limited",
-          "phone": "+1-905-477-8111"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/261532767",
-      "properties": {
-        "name": "Norwood Airport",
-        "tags": {
-          "aeroway": "runway",
-          "name": "Norwood Airport"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/272161408",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "highway": "service",
-          "name": "Airport Road"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/339082477",
-      "properties": {
-        "name": "Queens Quay West, Billy Bishop Airport",
-        "tags": {
-          "area": "yes",
-          "bench": "no",
-          "name": "Queens Quay West, Billy Bishop Airport",
-          "network": "TTC",
-          "operator": "Toronto Transit Commission",
-          "public_transport": "platform",
-          "railway": "platform",
-          "shelter": "yes",
-          "source:name": "Announced on streetcar 2019-05-24",
-          "tactile_paving": "no",
-          "tram": "yes",
-          "wheelchair": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/339082479",
-      "properties": {
-        "name": "Bathurst Street, Billy Bishop Airport",
-        "tags": {
-          "area": "yes",
-          "bench": "no",
-          "bin": "yes",
-          "name": "Bathurst Street, Billy Bishop Airport",
-          "network": "TTC",
-          "operator": "Toronto Transit Commission",
-          "public_transport": "platform",
-          "railway": "platform",
-          "shelter": "yes",
-          "source:name": "Announced on streetcar 2019-05-24",
-          "tactile_paving": "no",
-          "tram": "yes",
-          "wheelchair": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/379688210",
-      "properties": {
-        "name": "Airport Boulevard",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "name": "Airport Boulevard",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/379688211",
-      "properties": {
-        "name": "Airport Boulevard",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "1",
-          "name": "Airport Boulevard",
-          "oneway": "yes",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/447500846",
-      "properties": {
-        "name": "Airport Boulevard",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "name": "Airport Boulevard",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/447500847",
-      "properties": {
-        "name": "Airport Boulevard",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "1",
-          "name": "Airport Boulevard",
-          "oneway": "yes",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/460582111",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/471173499",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "maxspeed": "40",
-          "name": "Fairport Road",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/477862953",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/477862954",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/661457214",
-      "properties": {
-        "name": "Baldwin Airport",
-        "tags": {
-          "aeroway": "aerodrome",
-          "name": "Baldwin Airport"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/768796531",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "2",
-          "maxspeed": "40",
-          "name": "Fairport Road",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/779223157",
-      "properties": {
-        "name": "Airport Road",
-        "tags": {
-          "cycleway": "shoulder",
-          "highway": "secondary",
-          "lanes": "2",
-          "name": "Airport Road",
-          "ref": "CR 11",
-          "sidewalk": "no",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/795846716",
-      "properties": {
-        "name": "Oshawa Airport Terminal",
-        "tags": {
-          "aeroway": "terminal",
-          "building": "yes",
-          "name": "Oshawa Airport Terminal",
-          "operator": "City of Oshawa",
-          "wheelchair": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/867290654",
-      "properties": {
-        "name": "Elmhirst's Resort Airport",
-        "tags": {
-          "aeroway": "aerodrome",
-          "name": "Elmhirst's Resort Airport",
-          "source": "ourairports.com"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/1245105054",
-      "properties": {
-        "name": "Oshawa Executive Airport",
-        "tags": {
-          "addr:city": "Oshawa",
-          "addr:housenumber": "1200",
-          "addr:postcode": "L1J 8P5",
-          "addr:province": "Ontario",
-          "addr:street": "Airport Blvd",
-          "aeroway": "aerodrome",
-          "icao": "CYOO",
-          "name": "Oshawa Executive Airport"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/1268570088",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "maxaxleload": "5",
-          "maxspeed": "40",
-          "name": "Fairport Road",
-          "surface": "asphalt"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/1268570089",
-      "properties": {
-        "name": "Fairport Road",
-        "tags": {
-          "highway": "tertiary",
-          "lanes": "3",
-          "lanes:backward": "2",
-          "lanes:forward": "1",
-          "maxaxleload": "5",
-          "maxspeed": "40",
-          "name": "Fairport Road",
-          "surface": "asphalt",
-          "turn:lanes:backward": "left|"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/1355281883",
-      "properties": {
-        "name": "Greenbank Airport",
-        "tags": {
-          "aeroway": "aerodrome",
-          "icao": "CNP8",
-          "name": "Greenbank Airport",
-          "wikidata": "Q3913543"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/85471",
-      "properties": {
-        "name": "Billy Bishop Toronto City Airport",
-        "tags": {
-          "addr:city": "Toronto",
-          "addr:housenumber": "1",
-          "addr:postcode": "M5V 1A1",
-          "addr:province": "Ontario",
-          "addr:street": "Island Airport",
-          "aerodrome:type": "public",
-          "aeroway": "aerodrome",
-          "alt_name": "Toronto Island Airport",
-          "ele": "77",
-          "iata": "YTZ",
-          "icao": "CYTZ",
-          "internet_access": "wlan",
-          "internet_access:fee": "no",
-          "name": "Billy Bishop Toronto City Airport",
-          "operator": "Toronto Port Authority",
-          "operator:type": "public",
-          "ref": "YTZ",
-          "type": "multipolygon",
-          "wikidata": "Q117708",
-          "wikipedia": "en:Billy Bishop Toronto City Airport"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/6674964",
-      "properties": {
-        "name": "34 Pearson Airport - Finch",
-        "tags": {
-          "name": "34 Pearson Airport - Finch",
-          "network": "GO Transit",
-          "network:wikidata": "Q1357727",
-          "network:wikipedia": "en:GO Transit",
-          "operator": "Metrolinx",
-          "operator:wikidata": "Q3307451",
-          "operator:wikipedia": "en:Metrolinx",
-          "ref": "34",
-          "route": "bus",
-          "type": "route"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/8415135",
-      "properties": {
-        "name": "Billy Bishop Airport Terminal",
-        "tags": {
-          "aeroway": "terminal",
-          "building": "yes",
-          "layer": "1",
-          "name": "Billy Bishop Airport Terminal",
-          "toilets:wheelchair": "yes",
-          "type": "multipolygon",
-          "wheelchair": "yes"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/12855111",
-      "properties": {
-        "name": "Billy Bishop Airport Ferry (Airport - Bathurst)",
-        "tags": {
-          "duration": "00:01:30",
-          "foot": "yes",
-          "from": "Billy Bishop Airport",
-          "interval": "00:15",
-          "motorcar": "yes",
-          "name": "Billy Bishop Airport Ferry (Airport - Bathurst)",
-          "operator": "Billy Bishop Airport",
-          "route": "ferry",
-          "to": "Bathurst Street Terminal",
-          "type": "route"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/12855112",
-      "properties": {
-        "name": "Billy Bishop Airport Ferry (Bathurst - Airport)",
-        "tags": {
-          "duration": "00:01:30",
-          "foot": "yes",
-          "from": "Bathurst Street Terminal",
-          "interval": "00:15",
-          "motorcar": "yes",
-          "name": "Billy Bishop Airport Ferry (Bathurst - Airport)",
-          "operator": "Billy Bishop Airport",
-          "route": "ferry",
-          "to": "Billy Bishop Airport",
-          "type": "route"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/14939063",
-      "properties": {
-        "name": "52A Lawrence West to Pearson Airport",
-        "tags": {
-          "name": "52A Lawrence West to Pearson Airport",
-          "network": "TTC",
-          "network:wikidata": "Q6612865",
-          "network:wikipedia": "en:Toronto Transit Commission bus system",
-          "operator": "TTC",
-          "operator:wikidata": "Q17978",
-          "public_transport:version": "2",
-          "ref": "52A",
-          "route": "bus",
-          "type": "route"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/17135617",
-      "properties": {
-        "name": "Oshawa Airport Golf Club",
-        "tags": {
-          "addr:city": "Oshawa",
-          "addr:housenumber": "1145",
-          "addr:postcode": "L1J 6T8",
-          "addr:street": "Thornton Road North",
-          "leisure": "golf_course",
-          "name": "Oshawa Airport Golf Club",
-          "source": "CanVec 6.0 - NRCan",
-          "sport": "golf",
-          "type": "multipolygon"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/18084142",
-      "properties": {
-        "name": "Billy Bishop Airport Complimentary Shuttle",
-        "tags": {
-          "from": "Union Station/Fairmont Hotel",
-          "interval": "00:15",
-          "name": "Billy Bishop Airport Complimentary Shuttle",
-          "public_transport:version": "1",
-          "route": "bus",
-          "to": "Billy Bishop Airport",
-          "type": "route",
-          "website": "https://www.billybishopairport.com/to-from/shuttle/"
-        }
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": []
       }
     }
   ]

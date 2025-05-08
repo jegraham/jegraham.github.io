@@ -3246,6 +3246,43 @@
     },
     {
       "type": "Feature",
+      "id": "way/169508541",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "CanVec 6.0 - NRCan",
+        "id": "way/169508541"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.3295026,
+              44.5174825
+            ],
+            [
+              -78.3296443,
+              44.5174437
+            ],
+            [
+              -78.3295539,
+              44.5172755
+            ],
+            [
+              -78.3294122,
+              44.5173143
+            ],
+            [
+              -78.3295026,
+              44.5174825
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/169783037",
       "properties": {
         "amenity": "fire_station",
@@ -3651,6 +3688,44 @@
             [
               -79.359201,
               43.6250113
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/195667596",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Ramara Township Fire Station No. 3",
+        "source": "NRCan-CanVec-10.0",
+        "id": "way/195667596"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.2870606,
+              44.728388
+            ],
+            [
+              -79.287255,
+              44.7283469
+            ],
+            [
+              -79.2871811,
+              44.7281703
+            ],
+            [
+              -79.2869867,
+              44.7282114
+            ],
+            [
+              -79.2870606,
+              44.728388
             ]
           ]
         ]
@@ -4141,6 +4216,44 @@
             [
               -79.3648381,
               43.7692109
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/213368373",
+      "properties": {
+        "addr:street": "Matthew Street",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Marmora & Lake Fire Station",
+        "id": "way/213368373"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.6907387,
+              44.4798927
+            ],
+            [
+              -77.6906332,
+              44.479752
+            ],
+            [
+              -77.6902925,
+              44.4798763
+            ],
+            [
+              -77.6903979,
+              44.4800148
+            ],
+            [
+              -77.6907387,
+              44.4798927
             ]
           ]
         ]
@@ -4843,6 +4956,46 @@
     },
     {
       "type": "Feature",
+      "id": "way/257268135",
+      "properties": {
+        "addr:housenumber": "5",
+        "addr:street": "Matthew Street",
+        "amenity": "fire_station",
+        "building": "public",
+        "name": "Marmora Station",
+        "wikipedia": "en:Marmora and Lake",
+        "id": "way/257268135"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.6807141,
+              44.4837254
+            ],
+            [
+              -77.6808618,
+              44.4836674
+            ],
+            [
+              -77.6807955,
+              44.4835815
+            ],
+            [
+              -77.6806478,
+              44.4836394
+            ],
+            [
+              -77.6807141,
+              44.4837254
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/263823998",
       "properties": {
         "amenity": "fire_station",
@@ -4991,6 +5144,43 @@
             [
               -78.8980224,
               43.9445714
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/279930252",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "City of Kawartha Lakes Fire Rescue Service Coboconk Hall #19",
+        "id": "way/279930252"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.8035243,
+              44.6576721
+            ],
+            [
+              -78.8038434,
+              44.6574179
+            ],
+            [
+              -78.8037253,
+              44.6573293
+            ],
+            [
+              -78.8033998,
+              44.6575904
+            ],
+            [
+              -78.8035243,
+              44.6576721
             ]
           ]
         ]
@@ -5672,6 +5862,53 @@
     },
     {
       "type": "Feature",
+      "id": "way/331385268",
+      "properties": {
+        "addr:housenumber": "18",
+        "addr:street": "Scott Avenue",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Station #7 Frankford Ward",
+        "id": "way/331385268"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.5988343,
+              44.2010281
+            ],
+            [
+              -77.5986837,
+              44.2010523
+            ],
+            [
+              -77.5987651,
+              44.201312
+            ],
+            [
+              -77.5989494,
+              44.2012823
+            ],
+            [
+              -77.5989057,
+              44.2011429
+            ],
+            [
+              -77.598872,
+              44.2011483
+            ],
+            [
+              -77.5988343,
+              44.2010281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/354141030",
       "properties": {
         "addr:city": "Toronto",
@@ -6127,6 +6364,83 @@
     },
     {
       "type": "Feature",
+      "id": "way/413203451",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Chippewas of Rama Fire and Rescue Service",
+        "id": "way/413203451"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.350793,
+              44.651305
+            ],
+            [
+              -79.3509416,
+              44.6510183
+            ],
+            [
+              -79.3507834,
+              44.6510221
+            ],
+            [
+              -79.3505031,
+              44.6509572
+            ],
+            [
+              -79.3505232,
+              44.6509152
+            ],
+            [
+              -79.350483,
+              44.6509095
+            ],
+            [
+              -79.3505031,
+              44.650858
+            ],
+            [
+              -79.3504387,
+              44.6507778
+            ],
+            [
+              -79.3503314,
+              44.6508318
+            ],
+            [
+              -79.3501581,
+              44.6511544
+            ],
+            [
+              -79.3502561,
+              44.6511811
+            ],
+            [
+              -79.3502145,
+              44.6512585
+            ],
+            [
+              -79.3503521,
+              44.6512993
+            ],
+            [
+              -79.3503875,
+              44.6512123
+            ],
+            [
+              -79.350793,
+              44.651305
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/413213633",
       "properties": {
         "amenity": "fire_station",
@@ -6341,6 +6655,48 @@
             [
               -79.227697,
               43.76475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/417989307",
+      "properties": {
+        "addr:city": "Brechin",
+        "addr:housenumber": "3290",
+        "addr:province": "Ontario",
+        "addr:street": "County Road 47",
+        "amenity": "fire_station",
+        "image": "https://www.ramara.ca/en/shared-content/resources/YUNC0009.jpg",
+        "name": "Ramara Fire Station 1",
+        "website": "https://www.ramara.ca/en/living-here/fire-stations.aspx",
+        "id": "way/417989307"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.1726408,
+              44.5405411
+            ],
+            [
+              -79.1720695,
+              44.5406529
+            ],
+            [
+              -79.1721243,
+              44.5407951
+            ],
+            [
+              -79.1726956,
+              44.5406832
+            ],
+            [
+              -79.1726408,
+              44.5405411
             ]
           ]
         ]
@@ -7080,6 +7436,67 @@
             [
               -78.6063829,
               43.9130229
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/584931062",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "disused": "yes",
+        "id": "way/584931062"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.7993322,
+              44.3066694
+            ],
+            [
+              -77.799493,
+              44.3067553
+            ],
+            [
+              -77.7996815,
+              44.3065746
+            ],
+            [
+              -77.7995747,
+              44.3065175
+            ],
+            [
+              -77.79968,
+              44.3064165
+            ],
+            [
+              -77.7996123,
+              44.3063803
+            ],
+            [
+              -77.7995148,
+              44.3064738
+            ],
+            [
+              -77.7994963,
+              44.3064639
+            ],
+            [
+              -77.7993576,
+              44.3065969
+            ],
+            [
+              -77.7993898,
+              44.3066142
+            ],
+            [
+              -77.7993322,
+              44.3066694
             ]
           ]
         ]
@@ -8038,6 +8455,43 @@
     },
     {
       "type": "Feature",
+      "id": "way/689820780",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Brighton Fire Hall",
+        "id": "way/689820780"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.7352291,
+              44.0423868
+            ],
+            [
+              -77.7354669,
+              44.0423281
+            ],
+            [
+              -77.7353649,
+              44.042115
+            ],
+            [
+              -77.7351272,
+              44.0421738
+            ],
+            [
+              -77.7352291,
+              44.0423868
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/701225222",
       "properties": {
         "amenity": "fire_station",
@@ -8090,6 +8544,46 @@
     },
     {
       "type": "Feature",
+      "id": "way/734780896",
+      "properties": {
+        "addr:housenumber": "24",
+        "addr:street": "Old Hastings Road",
+        "amenity": "fire_station",
+        "building": "yes",
+        "check_date": "2022-10-23",
+        "name": "Warkworth Fire Department",
+        "id": "way/734780896"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.8905823,
+              44.2015142
+            ],
+            [
+              -77.8906939,
+              44.2013295
+            ],
+            [
+              -77.8904904,
+              44.2012663
+            ],
+            [
+              -77.8903788,
+              44.201451
+            ],
+            [
+              -77.8905823,
+              44.2015142
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/749420902",
       "properties": {
         "amenity": "fire_station",
@@ -8121,6 +8615,79 @@
             [
               -78.4081828,
               44.0556723
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/755504567",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "fire_station",
+        "name": "Fire Station 1",
+        "id": "way/755504567"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.5745776,
+              44.1085992
+            ],
+            [
+              -77.5748855,
+              44.1087539
+            ],
+            [
+              -77.5752845,
+              44.1083446
+            ],
+            [
+              -77.5749765,
+              44.1081898
+            ],
+            [
+              -77.5745776,
+              44.1085992
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/755515543",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "id": "way/755515543"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.9564949,
+              44.3110453
+            ],
+            [
+              -77.9566639,
+              44.3109378
+            ],
+            [
+              -77.9565754,
+              44.3108572
+            ],
+            [
+              -77.9564064,
+              44.3109513
+            ],
+            [
+              -77.9564949,
+              44.3110453
             ]
           ]
         ]
@@ -8187,6 +8754,110 @@
             [
               -79.4931566,
               43.8803115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/835151775",
+      "properties": {
+        "addr:city": "Campbellford",
+        "addr:housenumber": "50",
+        "addr:street": "Doxsee Avenue South",
+        "amenity": "fire_station",
+        "building": "yes",
+        "fixme": "Building shape not correct, fix when new satellite imagery is available.",
+        "name": "Trent Hills Emergency Services Base",
+        "start_date": "2020",
+        "id": "way/835151775"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.7968638,
+              44.3066024
+            ],
+            [
+              -77.7967843,
+              44.3069732
+            ],
+            [
+              -77.7969926,
+              44.3069961
+            ],
+            [
+              -77.7970413,
+              44.3067691
+            ],
+            [
+              -77.7972622,
+              44.3067934
+            ],
+            [
+              -77.797293,
+              44.3066495
+            ],
+            [
+              -77.7968638,
+              44.3066024
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/846816426",
+      "properties": {
+        "addr:housenumber": "10193",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "North Kanawha Emergency Services",
+        "id": "way/846816426"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.0911067,
+              44.7541076
+            ],
+            [
+              -78.091184,
+              44.7541082
+            ],
+            [
+              -78.0911822,
+              44.7542233
+            ],
+            [
+              -78.091394,
+              44.7542249
+            ],
+            [
+              -78.0913959,
+              44.7541038
+            ],
+            [
+              -78.0913287,
+              44.7541033
+            ],
+            [
+              -78.0913325,
+              44.7538501
+            ],
+            [
+              -78.0911106,
+              44.7538485
+            ],
+            [
+              -78.0911067,
+              44.7541076
             ]
           ]
         ]
@@ -8576,6 +9247,74 @@
     },
     {
       "type": "Feature",
+      "id": "way/1136300766",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "fire_station",
+        "id": "way/1136300766"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.5269448,
+              44.1154182
+            ],
+            [
+              -77.5268603,
+              44.1153364
+            ],
+            [
+              -77.5269635,
+              44.1147564
+            ],
+            [
+              -77.5268685,
+              44.1147476
+            ],
+            [
+              -77.5268989,
+              44.1145922
+            ],
+            [
+              -77.5268347,
+              44.1145827
+            ],
+            [
+              -77.5266707,
+              44.1145662
+            ],
+            [
+              -77.5266465,
+              44.114729
+            ],
+            [
+              -77.5265492,
+              44.1147178
+            ],
+            [
+              -77.5264069,
+              44.1153563
+            ],
+            [
+              -77.5267449,
+              44.1153934
+            ],
+            [
+              -77.5268266,
+              44.115481
+            ],
+            [
+              -77.5269448,
+              44.1154182
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/1248850597",
       "properties": {
         "amenity": "fire_station",
@@ -8620,6 +9359,42 @@
     },
     {
       "type": "Feature",
+      "id": "way/1296125867",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "id": "way/1296125867"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.810639,
+              44.7269757
+            ],
+            [
+              -78.8107614,
+              44.7268071
+            ],
+            [
+              -78.8105996,
+              44.7267478
+            ],
+            [
+              -78.8104772,
+              44.7269164
+            ],
+            [
+              -78.810639,
+              44.7269757
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/1306374933",
       "properties": {
         "amenity": "fire_station",
@@ -8651,6 +9426,48 @@
             [
               -78.6384758,
               44.4555169
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1344632734",
+      "properties": {
+        "addr:city": "Orillia",
+        "addr:housenumber": "1",
+        "addr:province": "ON",
+        "addr:street": "Commerce Road",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Orillia Fire Station 2",
+        "phone": "+17053255201",
+        "id": "way/1344632734"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.4327845,
+              44.6249622
+            ],
+            [
+              -79.4326314,
+              44.6247806
+            ],
+            [
+              -79.432377,
+              44.6248892
+            ],
+            [
+              -79.4325301,
+              44.6250708
+            ],
+            [
+              -79.4327845,
+              44.6249622
             ]
           ]
         ]
@@ -8850,6 +9667,42 @@
     },
     {
       "type": "Feature",
+      "id": "node/872692778",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Stirling Fire Station 2",
+        "source": "CanVec 6.0 - NRCan",
+        "id": "node/872692778"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6107825,
+          44.4011145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/892407332",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Havelock-Belmont-Methuen Fire Station 2",
+        "source": "CanVec 6.0 - NRCan",
+        "id": "node/892407332"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.789928,
+          44.5394812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/911338555",
       "properties": {
         "amenity": "fire_station",
@@ -8986,6 +9839,91 @@
     },
     {
       "type": "Feature",
+      "id": "node/924825934",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "CanVec 6.0 - NRCan",
+        "id": "node/924825934"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.0059993,
+          44.6219799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/925072616",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "CanVec 6.0 - NRCan",
+        "id": "node/925072616"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3365944,
+          44.7278293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/925122674",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "CanVec 6.0 - NRCan",
+        "id": "node/925122674"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3669457,
+          44.551908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/925159696",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "CanVec 6.0 - NRCan",
+        "id": "node/925159696"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4246426,
+          44.5787592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1393201511",
+      "properties": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "NRCan-CanVec-7.0",
+        "id": "node/1393201511"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.5951742,
+          44.7477163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/1778194468",
       "properties": {
         "addr:housenumber": "2339",
@@ -8999,6 +9937,25 @@
         "coordinates": [
           -78.8993092,
           43.956721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2276413257",
+      "properties": {
+        "addr:housenumber": "9",
+        "addr:postcode": "K0M 1N0",
+        "addr:street": "John Street",
+        "amenity": "fire_station",
+        "name": "Kawartha Lakes Fire Station 22 (Fenelon Falls)",
+        "id": "node/2276413257"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.7391747,
+          44.5387763
         ]
       }
     },
@@ -9037,6 +9994,24 @@
     },
     {
       "type": "Feature",
+      "id": "node/3384485250",
+      "properties": {
+        "addr:housenumber": "18",
+        "addr:street": "Scott Avenue",
+        "amenity": "fire_station",
+        "name": "Station #7 Frankford Ward",
+        "id": "node/3384485250"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5988014,
+          44.2011723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/4060811999",
       "properties": {
         "amenity": "fire_station",
@@ -9048,6 +10023,22 @@
         "coordinates": [
           -79.2630374,
           43.7892319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4314426648",
+      "properties": {
+        "amenity": "fire_station",
+        "name": "Orillia Fire Station",
+        "id": "node/4314426648"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.399511,
+          44.5965636
         ]
       }
     },
@@ -9084,6 +10075,38 @@
     },
     {
       "type": "Feature",
+      "id": "node/6878356397",
+      "properties": {
+        "amenity": "fire_station",
+        "name": "Brighton District Fire Department Station 2",
+        "id": "node/6878356397"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8025475,
+          44.1571889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7057009615",
+      "properties": {
+        "amenity": "fire_station",
+        "name": "Stirling-Rawdon Fire Station 1",
+        "id": "node/7057009615"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5540569,
+          44.3067328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/7361587916",
       "properties": {
         "amenity": "fire_station",
@@ -9095,6 +10118,38 @@
         "coordinates": [
           -78.0590764,
           44.1896372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7361615223",
+      "properties": {
+        "amenity": "fire_station",
+        "name": "Cramahe Township Fire Station 2",
+        "id": "node/7361615223"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.9345,
+          44.095259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7370548724",
+      "properties": {
+        "amenity": "fire_station",
+        "name": "Asphodel-Norwood Fire Station 1",
+        "id": "node/7370548724"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.9754592,
+          44.3810814
         ]
       }
     },
@@ -9115,6 +10170,36 @@
     },
     {
       "type": "Feature",
+      "id": "node/7646565361",
+      "properties": {
+        "amenity": "fire_station",
+        "id": "node/7646565361"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8863648,
+          44.4358316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7647266963",
+      "properties": {
+        "amenity": "fire_station",
+        "id": "node/7647266963"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1323975,
+          44.5902862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/7647285823",
       "properties": {
         "amenity": "fire_station",
@@ -9125,6 +10210,52 @@
         "coordinates": [
           -78.2403173,
           44.4890032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7647325946",
+      "properties": {
+        "amenity": "fire_station",
+        "name": "Kawartha Lakes Fire and Rescue - Station 20",
+        "id": "node/7647325946"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6970836,
+          44.6736449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7647350652",
+      "properties": {
+        "amenity": "fire_station",
+        "id": "node/7647350652"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6503917,
+          44.7764611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7647367936",
+      "properties": {
+        "amenity": "fire_station",
+        "id": "node/7647367936"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.977652,
+          44.5623017
         ]
       }
     },
@@ -9225,6 +10356,22 @@
         "coordinates": [
           -78.3069212,
           44.2722902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10671717971",
+      "properties": {
+        "amenity": "fire_station",
+        "name": "Quinte West Fire Station 5",
+        "id": "node/10671717971"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5922835,
+          44.1710929
         ]
       }
     },

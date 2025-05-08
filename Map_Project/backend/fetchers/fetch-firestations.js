@@ -7,9 +7,9 @@ const overpassUrl = 'https://overpass-api.de/api/interpreter';
 const query = `
 [out:json][timeout:25];
 (
-  node["amenity"="fire_station"](43.5,-79.5,44.5,-78); // Search for nodes within the bounding box
-  way["amenity"="fire_station"](43.5,-79.5,44.5,-78); // Search for ways within the bounding box
-  relation["amenity"="fire_station"](43.5,-79.5,44.5,-78); // Search for relations within the bounding box
+    node["amenity"="fire_station"](43.5,-79.5,44.8,-77.5); // Updated bounding box
+    way["amenity"="fire_station"](43.5,-79.5,44.8,-77.5); // Updated bounding box
+    relation["amenity"="fire_station"](43.5,-79.5,44.8,-77.5); // Updated bounding box
 );
 out body;
 >;

@@ -2,13 +2,11 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 import path from 'path';
 
-// Overpass API query to fetch places with "airport" in the name
+// Overpass API query to fetch airports within the specified area
 const overpassQuery = `
 [out:json];
 (
-    node["name"~"airport",i](43.5,-79.5,44.5,-78); // Search for nodes with "airport" in the name
-    way["name"~"airport",i](43.5,-79.5,44.5,-78); // Search for ways with "airport" in the name
-    relation["name"~"airport",i](43.5,-79.5,44.5,-78); // Search for relations with "airport" in the name
+    node["aeroway"="aerodrome"](43.5,-79.5,44.8,-77.5); // Updated bounding box
 );
 out body;
 `;
@@ -33,14 +31,12 @@ fetch('https://overpass-api.de/api/interpreter', {
                 type: 'Feature',
                 id: `node/${element.id}`,
                 properties: {
-                    name: element.tags?.name || 'Unnamed Place',
-                    tags: element.tags || {}, // Include all tags for debugging
+                    name: element.tags?.name || 'Unnamed Airport',
+                    aeroway: element.tags?.aeroway || 'aerodrome',
                 },
                 geometry: {
-                    type: element.type === 'node' ? 'Point' : 'Polygon',
-                    coordinates: element.type === 'node'
-                        ? [element.lon, element.lat]
-                        : element.geometry?.map(coord => [coord.lon, coord.lat]) || []
+                    type: 'Point',
+                    coordinates: [element.lon, element.lat]
                 }
             }))
         };
@@ -56,6 +52,6 @@ fetch('https://overpass-api.de/api/interpreter', {
 
         // Save GeoJSON to a file
         fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
-        console.log(`Places with "airport" in the name saved to ${outputPath}`);
+        console.log(`Airports data saved to ${outputPath}`);
     })
     .catch(error => console.error('Error fetching airport data:', error));

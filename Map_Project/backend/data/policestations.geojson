@@ -81,9 +81,45 @@
     },
     {
       "type": "Feature",
+      "id": "node/847469511",
+      "properties": {
+        "name": "Buckhorn Community OPP",
+        "tags": {
+          "amenity": "police",
+          "name": "Buckhorn Community OPP",
+          "phone": "+1-888-310-1122"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3508075,
+          44.5536159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/847508673",
+      "properties": {
+        "name": "Unnamed Police Station",
+        "tags": {
+          "amenity": "police"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3359745,
+          44.7276348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/916245498",
       "properties": {
-        "name": "Unnamed Police Feature",
+        "name": "Unnamed Police Station",
         "tags": {
           "amenity": "police",
           "building": "yes",
@@ -175,6 +211,24 @@
     },
     {
       "type": "Feature",
+      "id": "node/1876049808",
+      "properties": {
+        "name": "OPP",
+        "tags": {
+          "amenity": "police",
+          "name": "OPP"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8146153,
+          44.6601054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/2153789685",
       "properties": {
         "name": "Durham Regional Police Clarington Complex",
@@ -259,6 +313,27 @@
     },
     {
       "type": "Feature",
+      "id": "node/4562897910",
+      "properties": {
+        "name": "Ontario Provincial Police",
+        "tags": {
+          "amenity": "police",
+          "name": "Ontario Provincial Police",
+          "operator": "Ontario Provincial Police",
+          "operator:wikidata": "Q1046157",
+          "short_name": "OPP"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8035189,
+          44.2887249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/6589766059",
       "properties": {
         "name": "Mall Security",
@@ -335,9 +410,27 @@
     },
     {
       "type": "Feature",
+      "id": "node/10682151245",
+      "properties": {
+        "name": "2 MP",
+        "tags": {
+          "amenity": "police",
+          "name": "2 MP"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5294548,
+          44.1074229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/12072629314",
       "properties": {
-        "name": "Unnamed Police Feature",
+        "name": "Unnamed Police Station",
         "tags": {
           "amenity": "police",
           "description": "Summer police substation for 55 divison",
@@ -718,6 +811,29 @@
     },
     {
       "type": "Feature",
+      "id": "node/73155762",
+      "properties": {
+        "name": "Ontario Provincial Police (OPP)",
+        "tags": {
+          "addr:city": "Brighton",
+          "addr:housenumber": "95",
+          "addr:street": "dundas Street",
+          "amenity": "police",
+          "building": "yes",
+          "name": "Ontario Provincial Police (OPP)",
+          "operator": "Ontario Provincial Police",
+          "operator:wikidata": "Q1046157",
+          "operator:wikipedia": "en:Ontario Provincial Police",
+          "source": "CanVec 6.0 - NRCan"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/76815275",
       "properties": {
         "name": "Central East Division",
@@ -1036,6 +1152,25 @@
     },
     {
       "type": "Feature",
+      "id": "node/269747698",
+      "properties": {
+        "name": "O.P.P. Central Region Headquarters",
+        "tags": {
+          "amenity": "police",
+          "building": "yes",
+          "name": "O.P.P. Central Region Headquarters",
+          "operator": "Ontario Provincial Police",
+          "operator:wikidata": "Q1046157",
+          "operator:wikipedia": "en:Ontario Provincial Police"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/293432971",
       "properties": {
         "name": "18 Div Whitby",
@@ -1091,6 +1226,30 @@
     },
     {
       "type": "Feature",
+      "id": "node/364971953",
+      "properties": {
+        "name": "Ontario Provincial Police Headquarters",
+        "tags": {
+          "addr:city": "Orillia",
+          "addr:housenumber": "777",
+          "addr:street": "Memorial Avenue",
+          "amenity": "police",
+          "building": "yes",
+          "name": "Ontario Provincial Police Headquarters",
+          "operator": "Ontario Provincial Police",
+          "operator:wikidata": "Q1046157",
+          "wheelchair": "yes",
+          "wikidata": "Q20006867",
+          "wikipedia": "en:Ontario Provincial Police"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/366404953",
       "properties": {
         "name": "York Regional Police",
@@ -1108,6 +1267,22 @@
           "phone": "+1-866-876-5423",
           "short_name": "YRP",
           "website": "https://www.yrp.ca/en/about/3-district-georgina.asp"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/413203452",
+      "properties": {
+        "name": "Chippewas of Rama Police Service",
+        "tags": {
+          "amenity": "police",
+          "building": "yes",
+          "name": "Chippewas of Rama Police Service"
         }
       },
       "geometry": {
@@ -1214,6 +1389,42 @@
           "operator": "407 ETR;Ontario Provincial Police",
           "phone": "+1-905-731-8180",
           "start_date": "2018"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1094775924",
+      "properties": {
+        "name": "OPP",
+        "tags": {
+          "amenity": "police",
+          "building": "yes",
+          "name": "OPP",
+          "operator": "Ontario Provincial Police",
+          "operator:wikidata": "Q1046157"
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1269232035",
+      "properties": {
+        "name": "Ontario Provincial Police - Orillia",
+        "tags": {
+          "amenity": "police",
+          "building": "yes",
+          "name": "Ontario Provincial Police - Orillia",
+          "operator": "Ontario Provincial Police",
+          "operator:wikidata": "Q1046157"
         }
       },
       "geometry": {
