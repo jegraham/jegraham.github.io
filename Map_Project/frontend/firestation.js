@@ -3,7 +3,7 @@ let fireStationLayer;
 let fireStationMarkers = L.layerGroup(); // Layer group for fire station circles
 
 // Fetch fire station data from the backend
-fetch('../backend/data/firestations.geojson')
+fetch('../../backend/data/firestations.geojson')
     .then(response => response.json())
     .then(data => {
         // Handle polygon features

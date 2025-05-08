@@ -41,7 +41,7 @@ async function fetchFireStations() {
       return;
     }
 
-    const outputPath = '../../data/firestations.geojson'; // Correct relative path
+    const outputPath = '../data/firestations.geojson'; // Correct relative path
 
     // Ensure the directory exists
     const outputDir = outputPath.substring(0, outputPath.lastIndexOf('/'));

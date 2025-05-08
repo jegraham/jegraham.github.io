@@ -3,7 +3,7 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 // Define the new output directory and file path
-const outputDir = '../../backend/data'; // Change from './data' to '../data' to point to backend/data
+const outputDir = '../backend/data'; // Change from './data' to '../data' to point to backend/data
 const outputFile = join(outputDir, 'policestations.geojson');
 
 // Ensure the output directory exists

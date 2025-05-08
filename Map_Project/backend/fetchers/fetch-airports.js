@@ -42,7 +42,7 @@ fetch('https://overpass-api.de/api/interpreter', {
         };
 
         // Define the output path
-        const outputPath = path.resolve('./backend/data/airports.geojson');
+        const outputPath = path.resolve('../data/airports.geojson');
 
         // Ensure the directory exists
         const outputDir = path.dirname(outputPath);
