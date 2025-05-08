@@ -3,7 +3,7 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 // Define the new output directory and file path
-const outputDir = '../backend/data'; // Change from './data' to '../data' to point to backend/data
+const outputDir = '../data'; // Change from './data' to '../data' to point to backend/data
 const outputFile = join(outputDir, 'policestations.geojson');
 
 // Ensure the output directory exists
@@ -15,9 +15,9 @@ if (!existsSync(outputDir)) {
 const overpassQuery = `
 [out:json];
 (
-    node["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
-    way["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
-    relation["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
+    node["amenity"="police"](43.74, -79.19, 44.45, -78.18); // Updated bounding box
+    way["amenity"="police"](43.74, -79.19, 44.45, -78.18); // Updated bounding box
+    relation["amenity"="police"](43.74, -79.19, 44.45, -78.18); // Updated bounding box
 );
 out body;
 `;

@@ -16,7 +16,7 @@ var regionalWMS = L.tileLayer.wms('http://gis.durham.ca/arcgis/services/Public/O
 
 // Adjust the map bounds to include all regions
 var bounds = [
-    [43.5, -79.5], // Southwest corner (Durham Region)
-    [44.8, -77.5]  // Northeast corner (Peterborough and Northumberland)
+    [43.9, -79.19], // Southwest corner (Durham Region)
+    [44, -78.18]  // Northeast corner (Peterborough and Northumberland)
 ];
 map.fitBounds(bounds);

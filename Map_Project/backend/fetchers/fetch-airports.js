@@ -6,7 +6,7 @@ import path from 'path';
 const overpassQuery = `
 [out:json];
 (
-    node["aeroway"="aerodrome"](43.5,-79.5,44.8,-77.5); // Updated bounding box
+    node["aeroway"="aerodrome"](43.74, -79.19, 44.45, -78.18); // Updated bounding box
 );
 out body;
 `;
