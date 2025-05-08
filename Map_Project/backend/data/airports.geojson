@@ -33,6 +33,51 @@
     },
     {
       "type": "Feature",
+      "id": "node/1042024171",
+      "properties": {
+        "name": "Beaverton North",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.127269,
+          44.459454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042025588",
+      "properties": {
+        "name": "Fenelon Falls/Sturgeon Lake Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.7303009,
+          44.5238991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042027232",
+      "properties": {
+        "name": "Holland Landing Airpark",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4950027,
+          44.0894012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/1042028359",
       "properties": {
         "name": "Lindsay Airport (CNF4)",
@@ -48,6 +93,141 @@
     },
     {
       "type": "Feature",
+      "id": "node/1042028409",
+      "properties": {
+        "name": "Orillia Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3105776,
+          44.6794247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028476",
+      "properties": {
+        "name": "Gooderham/Pencil Lake Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3499985,
+          44.7999992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028513",
+      "properties": {
+        "name": "Keene/Elmhirst's Resort Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.108382,
+          44.2483787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028610",
+      "properties": {
+        "name": "Markham Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2621994,
+          43.9357986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028627",
+      "properties": {
+        "name": "Orillia/Lake St John Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.307367,
+          44.6816771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028658",
+      "properties": {
+        "name": "Port Stanton/Sparrow Lake Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4109087,
+          44.7992912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028949",
+      "properties": {
+        "name": "Stirling Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5616989,
+          44.2414017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042029123",
+      "properties": {
+        "name": "Orillia/Matchedash Lake Seaplane Base",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5,
+          44.7832985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042029233",
+      "properties": {
+        "name": "Norwood Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.9997025,
+          44.3650017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/1860910040",
       "properties": {
         "name": "Peterborough Airport",
@@ -58,6 +238,4566 @@
         "coordinates": [
           -78.3672073,
           44.2294344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7519672586",
+      "properties": {
+        "name": "Rollick Airpark",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.478565,
+          44.1429084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18536544",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4049155,
+          43.6278629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6703197389",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4034179,
+          43.6266433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7412589857",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4037632,
+          43.6265655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8304370362",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4036503,
+          43.6266132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8304370363",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4034676,
+          43.6266405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8304370365",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4039148,
+          43.6265375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10132530988",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4039214,
+          43.6265084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11905516895",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4042908,
+          43.6264494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12755428368",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4038525,
+          43.6265333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645176",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3935472,
+          43.6222164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645182",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3920733,
+          43.6221213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2532736340",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3946786,
+          43.6233999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6703190474",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.394313,
+          43.6230175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275848",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3920063,
+          43.6226324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275849",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3920328,
+          43.6223979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275854",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3920613,
+          43.62217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275855",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3930534,
+          43.6221828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11711671950",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3930183,
+          43.6221806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56643943",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4026483,
+          43.6294756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645172",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.397042,
+          43.6254544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2532736306",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4022901,
+          43.6268761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2532736327",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.398331,
+          43.6246779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6703262586",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3972627,
+          43.6253219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128025175",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4008293,
+          43.6304672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128025176",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4008352,
+          43.6304735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128025177",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4014271,
+          43.6301393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128025178",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4014321,
+          43.6301514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11042562050",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3988449,
+          43.6243704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11042562053",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3986788,
+          43.6244597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645194",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3913256,
+          43.6282486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275816",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3915571,
+          43.6263731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275817",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3915659,
+          43.6262989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275912",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3914737,
+          43.6270478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275923",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.391385,
+          43.6277666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275935",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3908979,
+          43.6283999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10132530982",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3915581,
+          43.6263296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18497278",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3996447,
+          43.6311055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10132531146",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3993683,
+          43.6312551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18497286",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3967098,
+          43.6326877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18497297",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3949247,
+          43.6336577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18497304",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3931294,
+          43.6319003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/21631675",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3966253,
+          43.6326821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/21631676",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3963018,
+          43.6324161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/21631677",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3963212,
+          43.6325458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/21631678",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.396472,
+          43.6327506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56643932",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3964614,
+          43.6328191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645137",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3929173,
+          43.6320225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645142",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3921772,
+          43.6312628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645148",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3916471,
+          43.6312571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1566645066",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3962279,
+          43.6324554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2268994634",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3962549,
+          43.6324402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2532685333",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3928712,
+          43.6319724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9311510775",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3927131,
+          43.6318007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024347",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.396731,
+          43.6326829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024348",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3966044,
+          43.6326611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024349",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3966297,
+          43.6326525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024350",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.396643,
+          43.6326305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024351",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3965997,
+          43.6325873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024352",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.396548,
+          43.6326138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024353",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3965289,
+          43.6325946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024354",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3965499,
+          43.632583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024355",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3964373,
+          43.6324702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024356",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3963896,
+          43.6325002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024357",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.396308,
+          43.6325527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024358",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3963034,
+          43.6325695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024359",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3963321,
+          43.6326136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024360",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3964741,
+          43.6327666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024361",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3964472,
+          43.6328384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024362",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3964319,
+          43.6328491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024363",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3958591,
+          43.6331609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024364",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3950654,
+          43.6335928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10128024365",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.395028,
+          43.6336073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18497326",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3874595,
+          43.6305459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645162",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3894206,
+          43.6289414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56793400",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3900532,
+          43.6286964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6775985859",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3895581,
+          43.629374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275636",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3897839,
+          43.6287909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275638",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3899509,
+          43.6287323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275639",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3900255,
+          43.6287061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8288275665",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3895021,
+          43.6292029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10132519053",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3890806,
+          43.6301496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10132519054",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3896648,
+          43.6297552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10132530977",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3901162,
+          43.6286743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18497312",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3890556,
+          43.631724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/18497321",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3881073,
+          43.6319488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645127",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3892915,
+          43.6317239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645131",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3896402,
+          43.6318353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/56645156",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3900241,
+          43.6316683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/555139144",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3889777,
+          43.6326855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/583316996",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3882778,
+          43.6320117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/583317187",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3889094,
+          43.6327235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8304370390",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3896906,
+          43.6318134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9247277462",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2705261,
+          43.9932109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9247277463",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2713047,
+          43.9918054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9247277464",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2653447,
+          43.99261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9247277465",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2638072,
+          43.9928631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9247277466",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2637503,
+          43.9930269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9247277467",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.261312,
+          43.9935325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9247277468",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.261723,
+          43.9952929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904990454",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9057922,
+          43.9254583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904992236",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.905906,
+          43.9251595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904994260",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9059657,
+          43.9250025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1077682157",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9061279,
+          43.9245764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1077682175",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9060946,
+          43.9246639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7141185885",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9059329,
+          43.9238164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095389",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9061937,
+          43.9244034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904994929",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.905547,
+          43.9265924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095391",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9056575,
+          43.9261959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095392",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9057731,
+          43.9258955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904990515",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9049439,
+          43.9238397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904990586",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9006551,
+          43.9222847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904992425",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9034672,
+          43.9234485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904994326",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9036368,
+          43.9230988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095382",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8995326,
+          43.9199584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095388",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9050938,
+          43.9239148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904991068",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8962792,
+          43.919033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904992859",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8957044,
+          43.9200321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/904994157",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8934213,
+          43.9205216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095380",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8937901,
+          43.9200648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095381",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8935147,
+          43.9205988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095377",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8881834,
+          43.9188465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095378",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8911982,
+          43.9188774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7826707198",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.887847,
+          43.9240772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7826707199",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8883994,
+          43.9247569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095376",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8858016,
+          43.9196425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095379",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.89174,
+          43.919456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095387",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.886619,
+          43.9218788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/394595387",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8855636,
+          43.9199859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7826707196",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8855651,
+          43.920026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1830698169",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9019693,
+          43.9260458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1830698178",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9028163,
+          43.9258331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1830698189",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9015235,
+          43.9261577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4356547797",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9043782,
+          43.9268569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095383",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9040878,
+          43.9261936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095384",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9030789,
+          43.9264082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095385",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.9014099,
+          43.9263763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11575095386",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.892266,
+          43.928428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/394595378",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8905241,
+          43.9267909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6192520551",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3409336,
+          44.2634037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6192520552",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3394476,
+          44.2631232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6192520553",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3391901,
+          44.2646714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6192520550",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3435514,
+          44.2704104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6192520554",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3382621,
+          44.2666459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6192520555",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3410409,
+          44.2723771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6192520556",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3419528,
+          44.2722926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252418",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.261288,
+          44.0821538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252419",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.261162,
+          44.0822752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252420",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2611486,
+          44.0823098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252421",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2611539,
+          44.0823426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252422",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2611969,
+          44.0823754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252423",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2617092,
+          44.0826779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252424",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2617708,
+          44.0826856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252425",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2618218,
+          44.0826779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252426",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2619801,
+          44.08257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252427",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2619908,
+          44.0825372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252428",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2619666,
+          44.0825006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12160252429",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2613256,
+          44.0821441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12542877404",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0140096,
+          44.1306372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12542877403",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0170451,
+          44.1380873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12542877406",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0127168,
+          44.1389532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12542877405",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0097578,
+          44.1316269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/732818293",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8554784,
+          44.6660016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/732817894",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8557015,
+          44.6661615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/732818547",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8547041,
+          44.6667249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401350",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6464095,
+          43.993138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401351",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6466786,
+          43.9931343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401352",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.646802,
+          43.9932375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401353",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6470623,
+          43.9939289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401354",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6471991,
+          43.9940657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401355",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6474627,
+          43.9941929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401356",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6475578,
+          43.9942461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401357",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6476547,
+          43.9945454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401358",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6474345,
+          43.9945882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401359",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6473663,
+          43.9945613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401360",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6473531,
+          43.9945312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401361",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6472386,
+          43.9945391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401362",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6471814,
+          43.9945755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401363",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6471462,
+          43.9946753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401364",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6472188,
+          43.9948194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042023449",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6498806,
+          44.003768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401366",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6498183,
+          44.0023664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401367",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6506564,
+          44.0022304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401368",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6505989,
+          44.0025407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401369",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6504959,
+          44.0026258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401370",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6505745,
+          44.0028344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401371",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6501962,
+          44.0029486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401372",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6504118,
+          44.0036396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10235401365",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6496951,
+          44.002257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7006084643",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3578916,
+          44.0010963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7006084644",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3586759,
+          44.0003528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4993124365",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3653967,
+          44.0051934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7006084645",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3661821,
+          44.0044489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042029064",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1099714,
+          44.250724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8084517112",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1092203,
+          44.2501592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8084517113",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1037379,
+          44.2534099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8084517114",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1048054,
+          44.254186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/732818091",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8498366,
+          44.6695641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/732818520",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8496587,
+          44.6693852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867670969",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.542943,
+          44.1048019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867671704",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5425412,
+          44.1046929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673604",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5435592,
+          44.1051099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1692558802",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5458879,
+          44.1067721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2623687061",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5441972,
+          44.1068739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2623687062",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5436964,
+          44.1057011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577717986",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5469679,
+          44.1066636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577717987",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5471189,
+          44.1067503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619574",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5433667,
+          44.1050137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234478976",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5441723,
+          44.1068156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234479004",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5435803,
+          44.1054297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867671563",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5291985,
+          44.1005759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1713529548",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5296579,
+          44.1004015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867670350",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5391852,
+          44.1050276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867670356",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5373693,
+          44.1048329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867670610",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5401233,
+          44.1039919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867670869",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5387752,
+          44.1049718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867671245",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5391367,
+          44.1041119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672286",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5395176,
+          44.1050218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672365",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5381156,
+          44.1050027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672923",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5414479,
+          44.1043064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672970",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5397036,
+          44.1051666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673349",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.539328,
+          44.1047272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673385",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5394434,
+          44.1040095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673431",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5362824,
+          44.1047221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673674",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5394276,
+          44.1048297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867674203",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5361684,
+          44.1047539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867674363",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5409287,
+          44.1042377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867674963",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5405501,
+          44.1040694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675015",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5359426,
+          44.1049093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675140",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5366541,
+          44.1048433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675648",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5390087,
+          44.1049918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675678",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5391112,
+          44.1043721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1713529542",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5383072,
+          44.1035298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619423",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5412562,
+          44.1077436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867671128",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5346904,
+          44.1046369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672721",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5352826,
+          44.104876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673120",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5350153,
+          44.1048126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675309",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5355481,
+          44.1049116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867670558",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5253668,
+          44.1010879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867671509",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5255239,
+          44.100946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672074",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5272988,
+          44.1002357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672093",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.528419,
+          44.100134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672187",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5247482,
+          44.1022799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672363",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5255582,
+          44.1007608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672427",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5262856,
+          44.1005242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672681",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5286778,
+          44.1001865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673755",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5289641,
+          44.1003636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867673858",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5250698,
+          44.1014576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867674435",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5277561,
+          44.1001732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867674462",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5248086,
+          44.1019144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867674712",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5260513,
+          44.1006688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675110",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5257778,
+          44.1006864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675337",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5252103,
+          44.1013581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675375",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5288024,
+          44.1002576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867675663",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5255015,
+          44.1008408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867674420",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5247118,
+          44.1025723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1713529546",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5228453,
+          44.1028989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1713529545",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5221603,
+          44.1075103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9908263463",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.54905,
+          44.1109211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592591063",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5495574,
+          44.1120214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592591064",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5509118,
+          44.1149487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619421",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5490766,
+          44.1109762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619422",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5490135,
+          44.1108456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11920307984",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5513365,
+          44.1158666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12754835912",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5518715,
+          44.1169726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1692558806",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5542323,
+          44.1221251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12753402889",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5477355,
+          44.1234154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234478958",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5334057,
+          44.1091405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234478959",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5317147,
+          44.1094956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234478960",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5328868,
+          44.1092329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234478962",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5325596,
+          44.1092636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234478963",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5321587,
+          44.1093486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11234478964",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5321062,
+          44.1094055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1692558807",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5238811,
+          44.1113879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1713529555",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5237808,
+          44.111162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9056940621",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5241343,
+          44.1124767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9056940622",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.523739,
+          44.1116348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9056940623",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5239679,
+          44.1115836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9056940624",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5247019,
+          44.1137386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619428",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5249817,
+          44.1111799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619429",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5244995,
+          44.1112881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619439",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5241339,
+          44.1113349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619440",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5247887,
+          44.1139231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12753405300",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5265468,
+          44.1108288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1692558804",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5200613,
+          44.114494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9056940620",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5217263,
+          44.1140617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619442",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5225201,
+          44.1144138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619448",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.522269,
+          44.1138889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619449",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5223183,
+          44.1139876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577717988",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5160186,
+          44.1217008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577717989",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5218111,
+          44.1182827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577717990",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5216917,
+          44.1180265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867672335",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5358171,
+          44.1257824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867821503",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5236605,
+          44.1282111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867828611",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.526964,
+          44.1276156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/867845347",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5246381,
+          44.1280108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577701983",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5222832,
+          44.1284758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577701982",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5203576,
+          44.1288419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7577717991",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.515972,
+          44.121791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1692558809",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5100329,
+          44.125196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619357",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5112314,
+          44.1276896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619358",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5102134,
+          44.1255716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10592619359",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5101532,
+          44.1254463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1692558805",
+      "properties": {
+        "name": "Unnamed Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5124187,
+          44.1301597
         ]
       }
     }

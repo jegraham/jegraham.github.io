@@ -1,15 +1,15 @@
-// Variable to store the fire station layers
-let fireStationLayer;
-let fireStationMarkers = L.layerGroup(); // Layer group for fire station circles
+// Variable to store the firestations layers
+let firestationsLayer;
+let firestationsMarkers = L.layerGroup(); // Layer group for firestations markers
 
 // Fetch fire station data from the backend
-fetch('../../backend/data/firestations.geojson')
+fetch('../backend/data/firestations.geojson')
     .then(response => response.json())
     .then(data => {
-        // Handle polygon features
+        // Filter features by geometry type
         const polygonFeatures = data.features.filter(f => f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon');
 
-        fireStationLayer = L.geoJSON(polygonFeatures, {
+        firestationsLayer = L.geoJSON(polygonFeatures, {
             style: function (feature) {
                 return {
                     color: 'red',
@@ -36,7 +36,7 @@ fetch('../../backend/data/firestations.geojson')
                         fillOpacity: 0.7, // Darkest opacity
                         weight: 0 // No border
                     });
-                    fireStationMarkers.addLayer(innerCircle);
+                    firestationsMarkers.addLayer(innerCircle);
 
                     const middleCircle = L.circle(latLng, {
                         radius: 500, // Radius in meters
@@ -45,7 +45,7 @@ fetch('../../backend/data/firestations.geojson')
                         fillOpacity: 0.5, // Medium opacity
                         weight: 0 // No border
                     });
-                    fireStationMarkers.addLayer(middleCircle);
+                    firestationsMarkers.addLayer(middleCircle);
 
                     const outerCircle = L.circle(latLng, {
                         radius: 800, // Radius in meters
@@ -54,36 +54,36 @@ fetch('../../backend/data/firestations.geojson')
                         fillOpacity: 0.3, // Lightest opacity
                         weight: 0 // No border
                     });
-                    fireStationMarkers.addLayer(outerCircle);
+                    firestationsMarkers.addLayer(outerCircle);
 
                     // Add a fire icon marker at the centroid
                     const marker = L.marker(latLng, {
                         icon: L.icon({
-                            iconUrl: 'https://img.icons8.com/emoji/48/000000/fire.png', // Fire icon URL
+                            iconUrl: 'https://img.icons8.com/emoji/48/000000/fire--v1.png', // Flame icon URL
                             iconSize: [25, 25], // Icon size
                             iconAnchor: [12, 12], // Anchor point of the icon
                             popupAnchor: [0, 0] // Popup anchor point
                         })
                     }).bindPopup(`<strong>${name}</strong>`);
-                    fireStationMarkers.addLayer(marker);
+                    firestationsMarkers.addLayer(marker);
                 }
             }
         });
 
         // Add the fire station layer and markers to the map by default
-        map.addLayer(fireStationLayer);
-        map.addLayer(fireStationMarkers);
+        map.addLayer(firestationsLayer);
+        map.addLayer(firestationsMarkers);
 
         // Add event listener for the toggle checkbox
         document.getElementById('toggleFireStations').addEventListener('change', function (e) {
             if (e.target.checked) {
                 // Add the fire station layer and markers to the map
-                map.addLayer(fireStationLayer);
-                map.addLayer(fireStationMarkers);
+                map.addLayer(firestationsLayer);
+                map.addLayer(firestationsMarkers);
             } else {
                 // Remove the fire station layer and markers from the map
-                map.removeLayer(fireStationLayer);
-                map.removeLayer(fireStationMarkers);
+                map.removeLayer(firestationsLayer);
+                map.removeLayer(firestationsMarkers);
             }
         });
     })
