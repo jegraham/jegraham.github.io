@@ -1,10 +1,15 @@
-const fetch = require('node-fetch');
-const fs = require('fs');
+import fetch from 'node-fetch';
+import fs from 'fs';
+import path from 'path';
 
-// Overpass API query to fetch airports
+// Overpass API query to fetch places with "airport" in the name
 const overpassQuery = `
 [out:json];
-node["aeroway"="aerodrome"](43.5,-79.5,44.5,-78.5); // Bounding box for Durham Region
+(
+    node["name"~"airport",i](43.5,-79.5,44.5,-78); // Search for nodes with "airport" in the name
+    way["name"~"airport",i](43.5,-79.5,44.5,-78); // Search for ways with "airport" in the name
+    relation["name"~"airport",i](43.5,-79.5,44.5,-78); // Search for relations with "airport" in the name
+);
 out body;
 `;
 
@@ -28,18 +33,29 @@ fetch('https://overpass-api.de/api/interpreter', {
                 type: 'Feature',
                 id: `node/${element.id}`,
                 properties: {
-                    name: element.tags?.name || 'Unnamed Airport',
-                    aeroway: element.tags?.aeroway || 'aerodrome',
+                    name: element.tags?.name || 'Unnamed Place',
+                    tags: element.tags || {}, // Include all tags for debugging
                 },
                 geometry: {
-                    type: 'Point',
-                    coordinates: [element.lon, element.lat]
+                    type: element.type === 'node' ? 'Point' : 'Polygon',
+                    coordinates: element.type === 'node'
+                        ? [element.lon, element.lat]
+                        : element.geometry?.map(coord => [coord.lon, coord.lat]) || []
                 }
             }))
         };
 
+        // Define the output path
+        const outputPath = path.resolve('./backend/data/airports.geojson');
+
+        // Ensure the directory exists
+        const outputDir = path.dirname(outputPath);
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+        }
+
         // Save GeoJSON to a file
-        fs.writeFileSync('./data/airports.geojson', JSON.stringify(geojson, null, 2));
-        console.log('Airports data saved to ./data/airports.geojson');
+        fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
+        console.log(`Places with "airport" in the name saved to ${outputPath}`);
     })
     .catch(error => console.error('Error fetching airport data:', error));

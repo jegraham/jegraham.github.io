@@ -11,20 +11,15 @@ if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true });
 }
 
-// Overpass API query to fetch all features related to police
-    // node["amenity"="police"](43.5,-79.5,44.5,-78); // Police stations
-    // node["office"="police"](43.5,-79.5,44.5,-78); // Police services
-    // node["name"~"Regional Police|Ontario Police|Police Service|Police Station"](43.5,-79.5,44.5,-78); // Search for names containing keywords
-    
+// Overpass API query to fetch places with "police" in the name
 const overpassQuery = `
 [out:json];
 (
-  way["amenity"="police"](43.5,-79.5,44.5,-78); // Include ways with "police"
-  relation["amenity"="police"](43.5,-79.5,44.5,-78); // Include relations with "police"
+    node["amenity"="police"](43.5,-79.5,44.5,-78);
+    way["amenity"="police"](43.5,-79.5,44.5,-78);
+    relation["amenity"="police"](43.5,-79.5,44.5,-78);
 );
 out body;
->;
-out skel qt;
 `;
 
 // Fetch data from Overpass API
@@ -61,6 +56,6 @@ fetch('https://overpass-api.de/api/interpreter', {
 
         // Save GeoJSON to a file
         writeFileSync(outputFile, JSON.stringify(geojson, null, 2));
-        console.log(`Police-related data saved to ${outputFile}`);
+        console.log(`All places with "police" in the name saved to ${outputFile}`);
     })
     .catch(error => console.error('Error fetching police data:', error));

@@ -6,11 +6,10 @@ const overpassUrl = 'https://overpass-api.de/api/interpreter';
 
 const query = `
 [out:json][timeout:25];
-area["name"="Durham Region"]->.searchArea;
 (
-  node["amenity"="fire_station"](area.searchArea);
-  way["amenity"="fire_station"](area.searchArea);
-  relation["amenity"="fire_station"](area.searchArea);
+  node["amenity"="fire_station"](43.5,-79.5,44.5,-78); // Search for nodes within the bounding box
+  way["amenity"="fire_station"](43.5,-79.5,44.5,-78); // Search for ways within the bounding box
+  relation["amenity"="fire_station"](43.5,-79.5,44.5,-78); // Search for relations within the bounding box
 );
 out body;
 >;
@@ -42,10 +41,13 @@ async function fetchFireStations() {
       return;
     }
 
-    const outputPath = './backend/data/firestations.geojson';
+    const outputPath = '../../data/firestations.geojson'; // Correct relative path
 
-    // Clear the file before writing (optional)
-    fs.writeFileSync(outputPath, '');
+    // Ensure the directory exists
+    const outputDir = outputPath.substring(0, outputPath.lastIndexOf('/'));
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
     // Write the GeoJSON data to the file
     fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
