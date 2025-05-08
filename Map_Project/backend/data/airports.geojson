@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/1042023458",
+      "properties": {
+        "name": "Port Hope (Peter's Field)",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4269762,
+          44.0248844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042023459",
+      "properties": {
+        "name": "Wesleyville Airstrip",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4441853,
+          43.9401966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042028359",
+      "properties": {
+        "name": "Lindsay Airport (CNF4)",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.7817031,
+          44.3645282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1860910040",
+      "properties": {
+        "name": "Peterborough Airport",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3672073,
+          44.2294344
+        ]
+      }
+    }
+  ]
+}
