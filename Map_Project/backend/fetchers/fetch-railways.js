@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import { getDistance } from 'geolib'; // Install geolib: npm install geolib
 
 const outputDir = '../data';
 const outputFile = join(outputDir, 'railways.geojson');
@@ -33,7 +34,7 @@ fetch('https://overpass-api.de/api/interpreter', {
     })
     .then(data => {
         // Convert Overpass JSON to GeoJSON
-        const features = data.elements.map(element => {
+        const rawFeatures = data.elements.map(element => {
             if (element.type === 'node' && element.lat && element.lon) {
                 // Convert node to Point
                 return {
@@ -64,6 +65,28 @@ fetch('https://overpass-api.de/api/interpreter', {
             }
             return null; // Skip unsupported elements
         }).filter(f => f !== null); // Remove null features
+
+        // Filter out similar points within 100 meters
+        const uniquePoints = [];
+        const pointFeatures = rawFeatures.filter(f => f.geometry.type === 'Point');
+
+        pointFeatures.forEach(point => {
+            const isDuplicate = uniquePoints.some(existingPoint => {
+                const distance = getDistance(
+                    { latitude: point.geometry.coordinates[1], longitude: point.geometry.coordinates[0] },
+                    { latitude: existingPoint.geometry.coordinates[1], longitude: existingPoint.geometry.coordinates[0] }
+                );
+                return distance <= 100; // Check if within 100 meters
+            });
+
+            if (!isDuplicate) {
+                uniquePoints.push(point);
+            }
+        });
+
+        // Combine unique points and LineString features
+        const lineFeatures = rawFeatures.filter(f => f.geometry.type === 'LineString');
+        const features = [...uniquePoints, ...lineFeatures];
 
         // Create a GeoJSON object
         const geojson = {
