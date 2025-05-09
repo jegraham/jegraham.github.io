@@ -1,30 +1,46 @@
 import fetch from 'node-fetch';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import { getDistance } from 'geolib';
 
-// Define the output directory and file path
-const outputDir = '../data'; // Ensure this points to the correct directory
+const outputDir = '../data';
 const outputFile = join(outputDir, 'policestations.geojson');
 
-// Ensure the output directory exists
 if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true });
 }
 
-// Overpass API query to fetch police stations within the specified area
 const overpassQuery = `
 [out:json][timeout:25];
 (
-    node["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
-    way["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
-    relation["amenity"="police"](43.5,-79.5,44.8,-77.5); // Updated bounding box
+    node["amenity"="police"](43.5,-79.5,44.8,-77.5);
+    way["amenity"="police"](43.5,-79.5,44.8,-77.5);
+    relation["amenity"="police"](43.5,-79.5,44.8,-77.5);
 );
 out body;
 >;
 out skel qt;
 `;
 
-// Fetch data from Overpass API
+function nameSimilarity(a, b) {
+    const minLength = Math.min(a.length, b.length);
+    const matches = [...a].filter((char, i) => char === b[i]).length;
+    return matches / minLength;
+}
+
+function areNearDuplicates(f1, f2, threshold = 0.85, maxDistance = 2000) {
+    const name1 = f1.properties.name.toLowerCase().trim();
+    const name2 = f2.properties.name.toLowerCase().trim();
+    const similarity = nameSimilarity(name1, name2);
+    const coords1 = f1.geometry.coordinates;
+    const coords2 = f2.geometry.coordinates;
+    const distance = getDistance(
+        { latitude: coords1[1], longitude: coords1[0] },
+        { latitude: coords2[1], longitude: coords2[0] }
+    );
+    return similarity >= threshold && distance <= maxDistance;
+}
+
 fetch('https://overpass-api.de/api/interpreter', {
     method: 'POST',
     body: overpassQuery,
@@ -37,63 +53,51 @@ fetch('https://overpass-api.de/api/interpreter', {
         return response.json();
     })
     .then(data => {
-        // Convert Overpass JSON to GeoJSON
+        const allFeatures = data.elements.map(element => {
+            const name = element.tags?.name || 'Unnamed Police Station';
+
+            if (element.type === 'node' && element.lat && element.lon) {
+                return {
+                    type: 'Feature',
+                    id: `${element.type}/${element.id}`,
+                    properties: { name, tags: element.tags || {} },
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [element.lon, element.lat]
+                    }
+                };
+            } else if ((element.type === 'way' || element.type === 'relation') && element.geometry) {
+                const coordinates = element.geometry.map(coord => [coord.lon, coord.lat]);
+                if (coordinates.length > 0) {
+                    return {
+                        type: 'Feature',
+                        id: `${element.type}/${element.id}`,
+                        properties: { name, tags: element.tags || {} },
+                        geometry: {
+                            type: 'Polygon',
+                            coordinates: [coordinates]
+                        }
+                    };
+                }
+            }
+            return null;
+        }).filter(f => f !== null);
+
+        // Remove near duplicates
+        const uniqueFeatures = [];
+        for (const feature of allFeatures) {
+            const isDuplicate = uniqueFeatures.some(existing => areNearDuplicates(existing, feature));
+            if (!isDuplicate) {
+                uniqueFeatures.push(feature);
+            }
+        }
+
         const geojson = {
             type: 'FeatureCollection',
-            features: data.elements.map(element => {
-                // Handle nodes, ways, and relations
-                if (element.type === 'node' && element.lat && element.lon) {
-                    return {
-                        type: 'Feature',
-                        id: `node/${element.id}`,
-                        properties: {
-                            name: element.tags?.name || 'Unnamed Police Station',
-                            tags: element.tags || {}, // Include all tags for debugging
-                        },
-                        geometry: {
-                            type: 'Point',
-                            coordinates: [element.lon, element.lat]
-                        }
-                    };
-                } else if (element.type === 'way' && element.geometry) {
-                    return {
-                        type: 'Feature',
-                        id: `way/${element.id}`,
-                        properties: {
-                            name: element.tags?.name || 'Unnamed Police Station',
-                            tags: element.tags || {}, // Include all tags for debugging
-                        },
-                        geometry: {
-                            type: 'Polygon',
-                            coordinates: [
-                                element.geometry.map(coord => [coord.lon, coord.lat])
-                            ]
-                        }
-                    };
-                } else if (element.type === 'relation' && element.geometry) {
-                    return {
-                        type: 'Feature',
-                        id: `relation/${element.id}`,
-                        properties: {
-                            name: element.tags?.name || 'Unnamed Police Station',
-                            tags: element.tags || {}, // Include all tags for debugging
-                        },
-                        geometry: {
-                            type: 'Polygon',
-                            coordinates: [
-                                element.geometry.map(coord => [coord.lon, coord.lat])
-                            ]
-                        }
-                    };
-                } else {
-                    console.warn('Skipping invalid element:', element);
-                    return null;
-                }
-            }).filter(feature => feature !== null) // Remove null features
+            features: uniqueFeatures
         };
 
-        // Save GeoJSON to a file
         writeFileSync(outputFile, JSON.stringify(geojson, null, 2));
-        console.log(`✅ Police stations data saved to ${outputFile}`);
+        console.log(`✅ Police stations data saved to ${outputFile} (no near-duplicates)`);
     })
     .catch(error => console.error('❌ Error fetching police station data:', error));

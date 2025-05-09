@@ -60,7 +60,7 @@ fetch('../backend/data/firestations.geojson')
             });
 
             const outer = L.circle(latLng, {
-                radius: 800,
+                radius: 1000,
                 color: 'orange',
                 fillColor: 'orange',
                 fillOpacity: 0.3,

@@ -1,21 +1,42 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
 import path from 'path';
+import { getDistance } from 'geolib';
 
-// Overpass API query to fetch airports within the specified area
+// Overpass QL to fetch airports
 const overpassQuery = `
 [out:json][timeout:25];
 (
-    node["aeroway"="aerodrome"](43.5, -79.5, 44.8, -77.5); // Updated bounding box
-    way["aeroway"="aerodrome"](43.5, -79.5, 44.8, -77.5); // Include ways
-    relation["aeroway"="aerodrome"](43.5, -79.5, 44.8, -77.5); // Include relations
+    node["aeroway"="aerodrome"](43.5, -79.5, 44.8, -77.5);
+    way["aeroway"="aerodrome"](43.5, -79.5, 44.8, -77.5);
+    relation["aeroway"="aerodrome"](43.5, -79.5, 44.8, -77.5);
 );
 out body;
 >;
 out skel qt;
 `;
 
-// Fetch data from Overpass API
+// Similarity functions
+function nameSimilarity(a, b) {
+    const minLength = Math.min(a.length, b.length);
+    const matches = [...a].filter((char, i) => char === b[i]).length;
+    return matches / minLength;
+}
+
+function areNearDuplicates(f1, f2, threshold = 0.85, maxDistance = 2000) {
+    const name1 = f1.properties.name.toLowerCase().trim();
+    const name2 = f2.properties.name.toLowerCase().trim();
+    const similarity = nameSimilarity(name1, name2);
+    const coords1 = f1.geometry.coordinates;
+    const coords2 = f2.geometry.coordinates;
+    const distance = getDistance(
+        { latitude: coords1[1], longitude: coords1[0] },
+        { latitude: coords2[1], longitude: coords2[0] }
+    );
+    return similarity >= threshold && distance <= maxDistance;
+}
+
+// Fetch and process data
 fetch('https://overpass-api.de/api/interpreter', {
     method: 'POST',
     body: overpassQuery,
@@ -28,90 +49,58 @@ fetch('https://overpass-api.de/api/interpreter', {
         return response.json();
     })
     .then(data => {
-        // Convert Overpass JSON to GeoJSON
-        const geojson = {
-            type: 'FeatureCollection',
-            features: data.elements.map(element => {
-                if (element.type === 'node' && element.lat && element.lon) {
-                    // Handle nodes
-                    return {
-                        type: 'Feature',
-                        id: `node/${element.id}`,
-                        properties: {
-                            name: element.tags?.name || 'Unnamed Airport',
-                            aeroway: element.tags?.aeroway || 'aerodrome',
-                        },
-                        geometry: {
-                            type: 'Point',
-                            coordinates: [element.lon, element.lat]
-                        }
-                    };
-                } else if (element.type === 'way' && element.geometry) {
-                    // Handle ways
-                    return {
-                        type: 'Feature',
-                        id: `way/${element.id}`,
-                        properties: {
-                            name: element.tags?.name || 'Unnamed Airport',
-                            aeroway: element.tags?.aeroway || 'aerodrome',
-                        },
-                        geometry: {
-                            type: 'Polygon',
-                            coordinates: [
-                                element.geometry.map(coord => [coord.lon, coord.lat])
-                            ]
-                        }
-                    };
-                } else if (element.type === 'relation' && element.geometry) {
-                    // Handle relations
-                    return {
-                        type: 'Feature',
-                        id: `relation/${element.id}`,
-                        properties: {
-                            name: element.tags?.name || 'Unnamed Airport',
-                            aeroway: element.tags?.aeroway || 'aerodrome',
-                        },
-                        geometry: {
-                            type: 'Polygon',
-                            coordinates: [
-                                element.geometry.map(coord => [coord.lon, coord.lat])
-                            ]
-                        }
-                    };
-                } else {
-                    console.warn('Skipping invalid element:', element);
-                    return null;
-                }
-            }).filter(feature => feature !== null) // Remove null features
-        };
+        // Convert to GeoJSON features
+        const allFeatures = data.elements.map(element => {
+            const name = element.tags?.name || 'Unnamed Airport';
+            const aeroway = element.tags?.aeroway || 'aerodrome';
 
-        // Remove duplicate features based on their IDs
-        const uniqueFeatures = [];
-        const seenIds = new Set();
-        geojson.features.forEach(feature => {
-            if (!seenIds.has(feature.id)) {
-                uniqueFeatures.push(feature);
-                seenIds.add(feature.id);
+            if (element.type === 'node' && element.lat && element.lon) {
+                return {
+                    type: 'Feature',
+                    id: `${element.type}/${element.id}`,
+                    properties: { name, aeroway },
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [element.lon, element.lat]
+                    }
+                };
+            } else if ((element.type === 'way' || element.type === 'relation') && element.geometry) {
+                const coordinates = element.geometry.map(coord => [coord.lon, coord.lat]);
+                return {
+                    type: 'Feature',
+                    id: `${element.type}/${element.id}`,
+                    properties: { name, aeroway },
+                    geometry: {
+                        type: 'Polygon',
+                        coordinates: [coordinates]
+                    }
+                };
             }
-        });
+            return null;
+        }).filter(f => f !== null);
 
-        // Create a new GeoJSON object with unique features
-        const uniqueGeojson = {
+        // Deduplicate based on name similarity + distance
+        const uniqueFeatures = [];
+        for (const feature of allFeatures) {
+            const isDuplicate = uniqueFeatures.some(existing => areNearDuplicates(existing, feature));
+            if (!isDuplicate) {
+                uniqueFeatures.push(feature);
+            }
+        }
+
+        // Final GeoJSON
+        const geojson = {
             type: 'FeatureCollection',
             features: uniqueFeatures
         };
 
-        // Define the output path
         const outputPath = path.resolve('../data/airports.geojson');
-
-        // Ensure the directory exists
         const outputDir = path.dirname(outputPath);
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
         }
 
-        // Save GeoJSON to a file
-        fs.writeFileSync(outputPath, JSON.stringify(uniqueGeojson, null, 2));
+        fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
         console.log(`✅ Airports data saved to ${outputPath}`);
     })
     .catch(error => console.error('❌ Error fetching airport data:', error));
