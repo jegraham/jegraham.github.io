@@ -59,7 +59,7 @@ fetch('../backend/data/railways.geojson')
         // Draw lines for each railway group
         Object.keys(railwayGroups).forEach(railwayId => {
             const coordinates = railwayGroups[railwayId];
-            const maxDistance = 0.1; // 100 meters in kilometers
+            const maxDistance = 0.03; // 100 meters in kilometers
             const connectedCoordinates = connectPoints(coordinates, maxDistance);
 
             // Check if there are enough points to draw a line
@@ -69,7 +69,7 @@ fetch('../backend/data/railways.geojson')
 
                 // Draw a line connecting the points
                 const railwayLine = L.polyline(connectedCoordinates, {
-                    color: 'blue',      // Line color
+                    color: 'red',      // Line color
                     weight: 4,          // Line thickness
                     opacity: 0.8        // Line opacity
                 });
@@ -77,11 +77,11 @@ fetch('../backend/data/railways.geojson')
                 // Add the railway line to the layer group
                 railwayLine.addTo(railwayLayer);
 
-                // Add a halo (50m wide) around the railway line
+                // Add a halo (300m wide) around the railway line
                 const railwayHalo = L.polyline(connectedCoordinates, {
-                    color: 'lightblue', // Halo color
-                    weight: 10,         // Halo thickness
-                    opacity: 0.5,       // Halo opacity
+                    color: 'red', // Halo color
+                    weight: 15,        // Halo thickness (300 meters wide)
+                    opacity: 0.1,       // Halo opacity
                     interactive: false  // Make the halo non-interactive
                 });
 
