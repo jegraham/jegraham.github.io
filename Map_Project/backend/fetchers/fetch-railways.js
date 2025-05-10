@@ -1,7 +1,6 @@
 import fetch from 'node-fetch';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
-import { getDistance } from 'geolib'; // Install geolib: npm install geolib
 
 const outputDir = '../data';
 const outputFile = join(outputDir, 'railways.geojson');
@@ -15,10 +14,12 @@ if (!existsSync(outputDir)) {
 const overpassQuery = `
 [out:json][timeout:25];
 (
-    way["railway"="rail"](43.5,-79.5,44.8,-77.5); // Fetch railway lines in the bounding box
+    way["railway"="rail"](43.5,-79.5,44.8,-77.5); // Adjust the bounding box as needed
     node(w); // Fetch all nodes associated with the ways
 );
 out body;
+>;
+out skel qt;
 `;
 
 fetch('https://overpass-api.de/api/interpreter', {
@@ -33,15 +34,26 @@ fetch('https://overpass-api.de/api/interpreter', {
         return response.json();
     })
     .then(data => {
+        // Create a map to associate nodes with their parent railway name
+        const wayNames = {};
+        data.elements.forEach(element => {
+            if (element.type === 'way' && element.tags?.name) {
+                element.nodes.forEach(nodeId => {
+                    wayNames[nodeId] = element.tags.name; // Map node ID to railway name
+                });
+            }
+        });
+
         // Convert Overpass JSON to GeoJSON
         const rawFeatures = data.elements.map(element => {
             if (element.type === 'node' && element.lat && element.lon) {
-                // Convert node to Point
+                // Convert node to Point and add railway name if available
                 return {
                     type: 'Feature',
                     id: `node/${element.id}`,
                     properties: {
-                        type: 'Railway Node'
+                        type: 'Railway Node',
+                        name: wayNames[element.id] || 'Unnamed Railway' // Add railway name to the point
                     },
                     geometry: {
                         type: 'Point',
@@ -55,7 +67,10 @@ fetch('https://overpass-api.de/api/interpreter', {
                     type: 'Feature',
                     id: `way/${element.id}`,
                     properties: {
-                        railway: element.tags?.railway || 'rail'
+                        ...element.tags, // Include all metadata (tags)
+                        railway: element.tags?.railway || 'rail',
+                        name: element.tags?.name || 'Unnamed Railway', // Add railway name
+                        subdivision: element.tags?.subdivision || 'Unknown Subdivision' // Add subdivision name
                     },
                     geometry: {
                         type: 'LineString',
@@ -66,32 +81,10 @@ fetch('https://overpass-api.de/api/interpreter', {
             return null; // Skip unsupported elements
         }).filter(f => f !== null); // Remove null features
 
-        // Filter out similar points within 100 meters
-        const uniquePoints = [];
-        const pointFeatures = rawFeatures.filter(f => f.geometry.type === 'Point');
-
-        pointFeatures.forEach(point => {
-            const isDuplicate = uniquePoints.some(existingPoint => {
-                const distance = getDistance(
-                    { latitude: point.geometry.coordinates[1], longitude: point.geometry.coordinates[0] },
-                    { latitude: existingPoint.geometry.coordinates[1], longitude: existingPoint.geometry.coordinates[0] }
-                );
-                return distance <= 100; // Check if within 100 meters
-            });
-
-            if (!isDuplicate) {
-                uniquePoints.push(point);
-            }
-        });
-
-        // Combine unique points and LineString features
-        const lineFeatures = rawFeatures.filter(f => f.geometry.type === 'LineString');
-        const features = [...uniquePoints, ...lineFeatures];
-
         // Create a GeoJSON object
         const geojson = {
             type: 'FeatureCollection',
-            features: features
+            features: rawFeatures
         };
 
         // Save the GeoJSON to a file
