@@ -99,31 +99,72 @@ fetch('../backend/data/railways.geojson')
             }
         });
 
-        // Add toggle controls for each railway
-        const layerControl = L.control.layers(null, railwayLayers, { collapsed: false }).addTo(map);
+        // Create a custom control for the railway checklist
+        const railwayControl = L.control({ position: 'topright' });
 
-        // Add a "Select All" checkbox
-        const selectAllDiv = L.DomUtil.create('div', 'leaflet-control-layers');
-        const selectAllCheckbox = L.DomUtil.create('input', '', selectAllDiv);
-        selectAllCheckbox.type = 'checkbox';
-        selectAllCheckbox.checked = true;
-        const selectAllLabel = L.DomUtil.create('label', '', selectAllDiv);
-        selectAllLabel.innerHTML = ' Select All';
+        railwayControl.onAdd = function () {
+            const container = L.DomUtil.create('div', 'leaflet-control-layers');
+            container.style.backgroundColor = 'white';
+            container.style.padding = '10px';
+            container.style.borderRadius = '5px';
+            container.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
 
-        // Add event listener to toggle all layers
-        selectAllCheckbox.addEventListener('change', () => {
-            const isChecked = selectAllCheckbox.checked;
+            // Create a button to toggle the checklist
+            const toggleButton = L.DomUtil.create('button', '', container);
+            toggleButton.innerHTML = 'Toggle Railways';
+            toggleButton.style.display = 'block';
+            toggleButton.style.marginBottom = '10px';
+
+            // Create a div for the checklist
+            const checklistDiv = L.DomUtil.create('div', '', container);
+            checklistDiv.style.display = 'none'; // Initially collapsed
+
+            // Add checkboxes for each railway
+            Object.keys(railwayLayers).forEach(railwayId => {
+                const checkbox = L.DomUtil.create('input', '', checklistDiv);
+                checkbox.type = 'checkbox';
+                checkbox.checked = true;
+
+                const label = L.DomUtil.create('label', '', checklistDiv);
+                label.innerHTML = ` ${railwayId}`;
+                label.style.marginLeft = '5px';
+
+                // Add event listener to toggle individual layers
+                checkbox.addEventListener('change', () => {
+                    if (checkbox.checked) {
+                        map.addLayer(railwayLayers[railwayId]);
+                    } else {
+                        map.removeLayer(railwayLayers[railwayId]);
+                    }
+                });
+
+                // Add a line break
+                L.DomUtil.create('br', '', checklistDiv);
+            });
+
+            // Add event listener to toggle the checklist visibility
+            toggleButton.addEventListener('click', () => {
+                checklistDiv.style.display = checklistDiv.style.display === 'none' ? 'block' : 'none';
+            });
+
+            return container;
+        };
+
+        railwayControl.addTo(map);
+
+        // Get the toggleRailways checkbox
+        const toggleRailwaysCheckbox = document.getElementById('toggleRailways');
+
+        // Add an event listener to toggle railway layers
+        toggleRailwaysCheckbox.addEventListener('change', () => {
+            const isChecked = toggleRailwaysCheckbox.checked;
             Object.values(railwayLayers).forEach(layer => {
                 if (isChecked) {
-                    map.addLayer(layer);
+                    map.addLayer(layer); // Add railway layers to the map
                 } else {
-                    map.removeLayer(layer);
+                    map.removeLayer(layer); // Remove railway layers from the map
                 }
             });
         });
-
-        // Insert the "Select All" checkbox at the top of the layer control
-        const layerControlContainer = layerControl.getContainer();
-        layerControlContainer.insertBefore(selectAllDiv, layerControlContainer.firstChild);
     })
     .catch(error => console.error('❌ Error loading railway data:', error));
