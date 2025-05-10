@@ -56,10 +56,19 @@ fetch('../backend/data/railways.geojson')
         // Create a layer group for each railway
         const railwayLayers = {};
 
+        // Function to calculate the weight for a 300m halo based on the current zoom level
+        function calculateHaloWeight(map) {
+            const metersPerPixel = 40075016.686 / (256 * Math.pow(2, map.getZoom())); // Earth's circumference / tile size
+            return 1000 / metersPerPixel; // 300 meters divided by meters per pixel
+        }
+
         // Draw lines for each railway group
         Object.keys(railwayGroups).forEach(railwayId => {
             const coordinates = railwayGroups[railwayId];
-            const maxDistance = 0.03; // 100 meters in kilometers
+            // Convert 3000 meters to degrees
+            const metersToDegrees = (meters, latitude) => meters / (111320 * Math.cos(latitude * (Math.PI / 180)));
+            // Use 3000 meters as the max distance
+            const maxDistance = metersToDegrees(3000, coordinates[0][0]); // Pass the latitude of the first point
             const connectedCoordinates = connectPoints(coordinates, maxDistance);
 
             // Check if there are enough points to draw a line
@@ -79,10 +88,10 @@ fetch('../backend/data/railways.geojson')
 
                 // Add a halo (300m wide) around the railway line
                 const railwayHalo = L.polyline(connectedCoordinates, {
-                    color: 'red', // Halo color
-                    weight: 15,        // Halo thickness (300 meters wide)
-                    opacity: 0.1,       // Halo opacity
-                    interactive: false  // Make the halo non-interactive
+                    color: 'red',        // Halo color
+                    weight: calculateHaloWeight(map), // Dynamically calculate weight
+                    opacity: 0.3,        // Halo opacity
+                    interactive: false   // Make the halo non-interactive
                 });
 
                 // Add the railway halo to the layer group
@@ -96,6 +105,12 @@ fetch('../backend/data/railways.geojson')
 
                 // Add the railway layer to the map by default
                 railwayLayer.addTo(map);
+
+                // Update the halo weight dynamically on zoom
+                map.on('zoomend', () => {
+                    const newWeight = calculateHaloWeight(map);
+                    railwayHalo.setStyle({ weight: newWeight });
+                });
             }
         });
 
