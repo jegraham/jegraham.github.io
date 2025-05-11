@@ -27,7 +27,7 @@ fetch('../backend/data/airports.geojson')
 
                 // Middle circle (medium dark)
                 const middleCircle = L.circle(latLng, {
-                    radius: 2000, // Radius in meters
+                    radius: 1500, // Radius in meters
                     color: 'red', // Circle border color
                     fillColor: 'red', // Circle fill color
                     fillOpacity: 0.5, // Medium opacity

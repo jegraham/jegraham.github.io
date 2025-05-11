@@ -20,7 +20,7 @@ fetch('../backend/data/policestations.geojson')
                 // Add concentric circles with varying opacity
                 // Innermost circle (very dark)
                 const innerCircle = L.circle(latLng, {
-                    radius: 500, // Radius in meters
+                    radius: 300, // Radius in meters
                     color: 'blue', // Circle border color
                     fillColor: 'blue', // Circle fill color
                     fillOpacity: 0.7, // Darkest opacity
@@ -30,7 +30,7 @@ fetch('../backend/data/policestations.geojson')
 
                 // Middle circle (medium dark)
                 const middleCircle = L.circle(latLng, {
-                    radius: 1000, // Radius in meters
+                    radius: 400, // Radius in meters
                     color: 'blue', // Circle border color
                     fillColor: 'blue', // Circle fill color
                     fillOpacity: 0.5, // Medium opacity
@@ -40,7 +40,7 @@ fetch('../backend/data/policestations.geojson')
 
                 // Outermost circle (light)
                 const outerCircle = L.circle(latLng, {
-                    radius: 1500, // Radius in meters
+                    radius: 500, // Radius in meters
                     color: 'blue', // Circle border color
                     fillColor: 'blue', // Circle fill color
                     fillOpacity: 0.3, // Lightest opacity
