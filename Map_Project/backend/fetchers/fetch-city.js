@@ -3,21 +3,20 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const outputDir = '../data';
-const outputFile = join(outputDir, 'neighborhoods.geojson');
+const outputFile = join(outputDir, 'cities.geojson');
 
 // Ensure the output directory exists
 if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true });
 }
 
-// Overpass API query to fetch neighborhoods and communities within a bounding box
+// Overpass API query to fetch cities and their boundaries within a bounding box
 const overpassQuery = `
 [out:json][timeout:25];
 (
-    relation["place"~"neighbourhood|suburb|locality|village|hamlet|town|city"](43.5,-79.5,44.8,-77.5);
-    relation["boundary"="administrative"]["admin_level"~"8|9"](43.5,-79.5,44.8,-77.5);
-    way(r);
-    node(w);
+    relation["place"="city"](43.5,-79.5,44.8,-77.5); // Adjust the bounding box as needed
+    way(r); // Fetch all ways that are part of the relations
+    node(w); // Fetch all nodes that are part of the ways
 );
 out body;
 >;
@@ -60,14 +59,23 @@ fetch('https://overpass-api.de/api/interpreter', {
                     .filter(member => member.type === 'way' && ways[member.ref])
                     .map(member => ways[member.ref]);
 
+                // Ensure the boundary is closed
+                const flattenedCoordinates = coordinates.flat();
+                if (
+                    flattenedCoordinates[0][0] !== flattenedCoordinates[flattenedCoordinates.length - 1][0] ||
+                    flattenedCoordinates[0][1] !== flattenedCoordinates[flattenedCoordinates.length - 1][1]
+                ) {
+                    flattenedCoordinates.push(flattenedCoordinates[0]); // Close the polygon
+                }
+
                 return {
                     type: 'Feature',
                     properties: {
-                        name: relation.tags.name // Neighborhood name
+                        name: relation.tags.name // City name
                     },
                     geometry: {
                         type: 'Polygon',
-                        coordinates: [coordinates.flat()] // Flatten nested arrays for GeoJSON
+                        coordinates: [flattenedCoordinates] // Use the connected coordinates
                     }
                 };
             });
@@ -79,6 +87,6 @@ fetch('https://overpass-api.de/api/interpreter', {
 
         // Save the GeoJSON to a file
         writeFileSync(outputFile, JSON.stringify(geojson, null, 2));
-        console.log(`✅ Neighborhood data saved to ${outputFile}`);
+        console.log(`✅ City data saved to ${outputFile}`);
     })
-    .catch(error => console.error('❌ Error fetching neighborhood data:', error));
+    .catch(error => console.error('❌ Error fetching city data:', error));
