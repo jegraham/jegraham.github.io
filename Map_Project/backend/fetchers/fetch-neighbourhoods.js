@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import osmtogeojson from 'osmtogeojson';
 
 const outputDir = '../data';
 const outputFile = join(outputDir, 'neighborhoods.geojson');
@@ -10,17 +11,15 @@ if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true });
 }
 
-// Overpass API query to fetch neighborhoods and communities within a bounding box
+// Overpass API query to fetch administrative boundaries (level 7 and 8)
 const overpassQuery = `
 [out:json][timeout:25];
 (
-    relation["place"~"neighbourhood|suburb|locality|village|hamlet|town|city"](43.5,-79.5,44.8,-77.5);
-    relation["boundary"="administrative"]["admin_level"~"8|9"](43.5,-79.5,44.8,-77.5);
-    way(r);
-    node(w);
+    relation["boundary"="administrative"]["admin_level"~"6|7|8"](43.5,-79.5,44.8,-77.5);
 );
 out body;
 >;
+// Include all referenced nodes and ways
 out skel qt;
 `;
 
@@ -36,46 +35,8 @@ fetch('https://overpass-api.de/api/interpreter', {
         return response.json();
     })
     .then(data => {
-        // Create a map of nodes with their coordinates
-        const nodes = {};
-        data.elements
-            .filter(element => element.type === 'node')
-            .forEach(node => {
-                nodes[node.id] = [node.lon, node.lat];
-            });
-
-        // Create a map of ways with their coordinates
-        const ways = {};
-        data.elements
-            .filter(element => element.type === 'way')
-            .forEach(way => {
-                ways[way.id] = way.nodes.map(nodeId => nodes[nodeId]);
-            });
-
-        // Convert relations to GeoJSON features
-        const features = data.elements
-            .filter(element => element.type === 'relation' && element.tags?.name && element.members)
-            .map(relation => {
-                const coordinates = relation.members
-                    .filter(member => member.type === 'way' && ways[member.ref])
-                    .map(member => ways[member.ref]);
-
-                return {
-                    type: 'Feature',
-                    properties: {
-                        name: relation.tags.name // Neighborhood name
-                    },
-                    geometry: {
-                        type: 'Polygon',
-                        coordinates: [coordinates.flat()] // Flatten nested arrays for GeoJSON
-                    }
-                };
-            });
-
-        const geojson = {
-            type: 'FeatureCollection',
-            features: features
-        };
+        // Convert OSM data to GeoJSON
+        const geojson = osmtogeojson(data);
 
         // Save the GeoJSON to a file
         writeFileSync(outputFile, JSON.stringify(geojson, null, 2));
