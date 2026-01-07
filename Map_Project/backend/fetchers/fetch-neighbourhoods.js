@@ -15,7 +15,7 @@ if (!existsSync(outputDir)) {
 const overpassQuery = `
 [out:json][timeout:25];
 (
-    relation["boundary"="administrative"]["admin_level"~"6|7|8"](43.5,-79.5,44.8,-77.5);
+    relation["boundary"="administrative"]["admin_level"~"6|7|8|9|10"](43.5,-79.5,44.8,-77.5);
 );
 out body;
 >;
